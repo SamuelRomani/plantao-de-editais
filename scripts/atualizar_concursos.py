@@ -6,6 +6,7 @@ import json
 import os
 import re
 import sys
+import urllib.error
 import urllib.parse
 import urllib.request
 from pathlib import Path
@@ -109,7 +110,8 @@ def ufs_alerta():
 
 def enviar_telegram(concursos, titulo):
     """Envia a lista pelo bot, se TELEGRAM_BOT_TOKEN e TELEGRAM_CHAT_ID estiverem definidos."""
-    token, chat = os.environ.get("TELEGRAM_BOT_TOKEN"), os.environ.get("TELEGRAM_CHAT_ID")
+    token = os.environ.get("TELEGRAM_BOT_TOKEN", "").strip().removeprefix("bot")
+    chat = os.environ.get("TELEGRAM_CHAT_ID", "").strip().strip('"')
     if not (token and chat):
         print("Telegram não configurado; pulando.")
         return
@@ -127,7 +129,14 @@ def enviar_telegram(concursos, titulo):
     for texto in mensagens:
         dados = urllib.parse.urlencode({"chat_id": chat, "text": texto.strip(), "parse_mode": "HTML",
                                         "disable_web_page_preview": "true"}).encode()
-        urllib.request.urlopen(f"https://api.telegram.org/bot{token}/sendMessage", dados, timeout=30)
+        try:
+            urllib.request.urlopen(f"https://api.telegram.org/bot{token}/sendMessage", dados, timeout=30)
+        except urllib.error.HTTPError as erro:
+            motivo = erro.read().decode("utf-8", "replace")
+            dica = {400: "confira o TELEGRAM_CHAT_ID e se você já mandou uma mensagem para o bot",
+                    401: "o TELEGRAM_BOT_TOKEN está errado", 404: "o TELEGRAM_BOT_TOKEN está errado",
+                    403: "o bot foi bloqueado ou não pode falar nesse chat"}.get(erro.code, "")
+            sys.exit(f"Telegram recusou a mensagem ({erro.code}): {motivo}\nDica: {dica}")
     print(f"Telegram: {len(mensagens)} mensagem(ns) enviada(s).")
 
 
