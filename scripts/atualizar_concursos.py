@@ -14,7 +14,7 @@ from pathlib import Path
 URL = "https://www.pciconcursos.com.br/vagas/enfermeiro"
 OUT = Path(__file__).resolve().parent.parent / "concursos.json"
 ALERTA = Path(__file__).resolve().parent.parent / "alerta.md"
-SITE = "https://samuelromani.github.io/provas-enfermeiro/#concursos"
+SITE = "https://samuelromani.github.io/plantao-de-editais/#concursos"
 TZ = datetime.timezone(datetime.timedelta(hours=-3))
 
 # "na" = aberto, "da" = aberto em destaque, "ea" = encerrado (ignorado)
