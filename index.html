@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Provas de Enfermeiro</title>
+<meta name="description" content="Provas de concurso para Enfermeiro (2022 em diante), com filtro por cargo, banca e ano. Fonte: PCI Concursos.">
+<style>
+:root {
+  --bg: #f6f7f9; --surface: #ffffff; --text: #1b1f24; --muted: #5d6673;
+  --border: #dde1e6; --accent: #0b7a6f; --accent-soft: #e3f3f1; --row-hover: #f1f4f7;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #111418; --surface: #1a1e23; --text: #e8eaed; --muted: #9aa3ad;
+    --border: #2c323a; --accent: #4cc5b6; --accent-soft: #173431; --row-hover: #20262c;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #111418; --surface: #1a1e23; --text: #e8eaed; --muted: #9aa3ad;
+  --border: #2c323a; --accent: #4cc5b6; --accent-soft: #173431; --row-hover: #20262c;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
+h1 { font-size: 1.6rem; margin: 0 0 4px; }
+.sub { color: var(--muted); margin: 0 0 20px; }
+.filters { display: grid; gap: 10px; grid-template-columns: 1.6fr 1.4fr 1.2fr 0.7fr auto;
+  background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
+@media (max-width: 760px) { .filters { grid-template-columns: 1fr 1fr; } .filters .q { grid-column: 1 / -1; } }
+label { display: flex; flex-direction: column; gap: 4px; font-size: .8rem; color: var(--muted); }
+input, select, button { font: inherit; color: var(--text); background: var(--bg);
+  border: 1px solid var(--border); border-radius: 7px; padding: 8px 10px; min-width: 0; }
+button { cursor: pointer; align-self: end; }
+button:hover { border-color: var(--accent); }
+.count { margin: 14px 2px 8px; color: var(--muted); font-size: .9rem; }
+.count b { color: var(--text); }
+table { width: 100%; border-collapse: collapse; background: var(--surface);
+  border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+th { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
+tbody tr:hover { background: var(--row-hover); }
+td a { color: var(--accent); text-decoration: none; font-weight: 500; }
+td a:hover { text-decoration: underline; }
+.tag { display: inline-block; background: var(--accent-soft); color: var(--accent);
+  border-radius: 999px; padding: 1px 9px; font-size: .8rem; white-space: nowrap; }
+@media (max-width: 640px) {
+  thead { display: none; }
+  table, tbody, tr, td { display: block; }
+  tr { border-bottom: 1px solid var(--border); padding: 8px 0; }
+  td { border: 0; padding: 2px 12px; }
+  td.ano, td.banca { display: inline-block; }
+}
+.more { display: block; margin: 14px auto 0; }
+footer { margin-top: 28px; color: var(--muted); font-size: .82rem; }
+footer a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1>Provas de Enfermeiro</h1>
+  <p class="sub">Concursos de 2022 em diante. Clique na prova para abrir a página de download no PCI Concursos.</p>
+
+  <div class="filters">
+    <label class="q">Cargo ou órgão
+      <input id="q" type="search" placeholder="ex.: UTI, obstetra, Prefeitura de Campinas…">
+    </label>
+    <label>Especialidade
+      <select id="esp"><option value="">Todas</option></select>
+    </label>
+    <label>Banca
+      <select id="banca"><option value="">Todas</option></select>
+    </label>
+    <label>Ano
+      <select id="ano"><option value="">Todos</option></select>
+    </label>
+    <button id="limpar" type="button">Limpar</button>
+  </div>
+
+  <p class="count" id="count">Carregando…</p>
+  <table>
+    <thead><tr><th>Cargo</th><th>Órgão</th><th>Banca</th><th>Ano</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table>
+  <button class="more" id="more" type="button" hidden>Mostrar mais</button>
+
+  <footer>
+    Lista gerada a partir de <a href="https://www.pciconcursos.com.br/provas/enfermeiro" rel="noopener">pciconcursos.com.br</a>.
+    Os PDFs ficam hospedados lá. <span id="atualizado"></span>
+  </footer>
+</main>
+<script>
+const PAGE = 100;
+const $ = id => document.getElementById(id);
+const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
+let data = [], filtered = [], shown = 0;
+
+function esc(s) {
+  return s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+}
+
+function fillSelect(el, values) {
+  for (const v of values) el.add(new Option(v, v));
+}
+
+function readUrl() {
+  const p = new URLSearchParams(location.search);
+  $("q").value = p.get("q") || "";
+  $("esp").value = p.get("esp") || "";
+  $("banca").value = p.get("banca") || "";
+  $("ano").value = p.get("ano") || "";
+}
+
+function writeUrl() {
+  const p = new URLSearchParams();
+  for (const k of ["q", "esp", "banca", "ano"]) if ($(k).value) p.set(k, $(k).value);
+  history.replaceState(null, "", p.toString() ? "?" + p : location.pathname);
+}
+
+function apply() {
+  const terms = norm($("q").value).split(/\s+/).filter(Boolean);
+  const esp = $("esp").value, banca = $("banca").value, ano = $("ano").value;
+  filtered = data.filter(r =>
+    (!esp || r.esp === esp) &&
+    (!banca || r.banca === banca) &&
+    (!ano || r.ano === ano) &&
+    terms.every(t => r._s.includes(t)));
+  shown = 0;
+  $("rows").innerHTML = "";
+  render();
+  writeUrl();
+}
+
+function render() {
+  const slice = filtered.slice(shown, shown + PAGE);
+  $("rows").insertAdjacentHTML("beforeend", slice.map(r =>
+    `<tr><td><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.cargo)}</a></td>` +
+    `<td>${esc(r.orgao)}</td><td class="banca"><span class="tag">${esc(r.banca)}</span></td>` +
+    `<td class="ano">${r.ano}</td></tr>`).join(""));
+  shown += slice.length;
+  $("count").innerHTML = `<b>${filtered.length.toLocaleString("pt-BR")}</b> de ${data.length.toLocaleString("pt-BR")} provas`;
+  $("more").hidden = shown >= filtered.length;
+}
+
+fetch("provas.json").then(r => r.json()).then(j => {
+  data = j.provas.map(r => ({ ...r, _s: norm(`${r.cargo} ${r.orgao} ${r.banca}`) }));
+  const espCount = {};
+  for (const r of data) espCount[r.esp] = (espCount[r.esp] || 0) + 1;
+  fillSelect($("esp"), Object.keys(espCount).sort((a, b) => espCount[b] - espCount[a]));
+  fillSelect($("banca"), [...new Set(data.map(r => r.banca))].sort((a, b) => a.localeCompare(b, "pt-BR")));
+  fillSelect($("ano"), [...new Set(data.map(r => r.ano))].sort().reverse());
+  $("atualizado").textContent = `Atualizado em ${j.atualizado}.`;
+  readUrl();
+  apply();
+}).catch(() => { $("count").textContent = "Não foi possível carregar a lista."; });
+
+let t;
+$("q").addEventListener("input", () => { clearTimeout(t); t = setTimeout(apply, 150); });
+$("esp").addEventListener("change", apply);
+$("banca").addEventListener("change", apply);
+$("ano").addEventListener("change", apply);
+$("more").addEventListener("click", render);
+$("limpar").addEventListener("click", () => { $("q").value = $("esp").value = $("banca").value = $("ano").value = ""; apply(); });
+</script>
+</body>
+</html>
