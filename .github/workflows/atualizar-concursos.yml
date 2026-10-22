@@ -4,6 +4,11 @@ on:
   schedule:
     - cron: "17 */3 * * *"   # a cada 3 horas
   workflow_dispatch:          # botão "Run workflow" na aba Actions
+    inputs:
+      testar_telegram:
+        description: "Só mandar uma mensagem de teste no Telegram"
+        type: boolean
+        default: false
 
 permissions:
   contents: write
@@ -19,6 +24,9 @@ jobs:
       # UFs que geram aviso (issue) quando surge concurso novo. "Nacional" = federais.
       # Deixe vazio para ser avisado de todos.
       ALERTA_UFS: "Nacional,RS,SC"
+      # Cadastrados em Settings → Secrets and variables → Actions
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -26,11 +34,17 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Testar Telegram
+        if: inputs.testar_telegram
+        run: python scripts/atualizar_concursos.py --testar-telegram
+
       - name: Coletar concursos abertos
+        if: ${{ !inputs.testar_telegram }}
         run: python scripts/atualizar_concursos.py
 
       - name: Salvar mudanças
         id: commit
+        if: ${{ !inputs.testar_telegram }}
         run: |
           if git diff --quiet -- concursos.json; then
             echo "mudou=false" >> "$GITHUB_OUTPUT"
