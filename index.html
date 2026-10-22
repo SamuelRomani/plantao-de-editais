@@ -4,34 +4,50 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Provas de Enfermeiro</title>
-<meta name="description" content="Provas de concurso para Enfermeiro (2022 em diante), com filtro por cargo, banca e ano. Fonte: PCI Concursos.">
+<meta name="description" content="Provas de concurso para Enfermeiro (2022 em diante) e concursos com inscrições abertas, com filtros. Fonte: PCI Concursos.">
 <style>
 :root {
   --bg: #f6f7f9; --surface: #ffffff; --text: #1b1f24; --muted: #5d6673;
   --border: #dde1e6; --accent: #0b7a6f; --accent-soft: #e3f3f1; --row-hover: #f1f4f7;
+  --new: #b4500a; --new-soft: #fdeedd;
 }
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     --bg: #111418; --surface: #1a1e23; --text: #e8eaed; --muted: #9aa3ad;
     --border: #2c323a; --accent: #4cc5b6; --accent-soft: #173431; --row-hover: #20262c;
+    --new: #f2a35e; --new-soft: #3a2614;
   }
 }
 :root[data-theme="dark"] {
   --bg: #111418; --surface: #1a1e23; --text: #e8eaed; --muted: #9aa3ad;
   --border: #2c323a; --accent: #4cc5b6; --accent-soft: #173431; --row-hover: #20262c;
+  --new: #f2a35e; --new-soft: #3a2614;
 }
 * { box-sizing: border-box; }
 body { margin: 0; background: var(--bg); color: var(--text);
   font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
 main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
-h1 { font-size: 1.6rem; margin: 0 0 4px; }
-.sub { color: var(--muted); margin: 0 0 20px; }
-.filters { display: grid; gap: 10px; grid-template-columns: 1.6fr 1.4fr 1.2fr 0.7fr auto;
-  background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 12px; }
-@media (max-width: 760px) { .filters { grid-template-columns: 1fr 1fr; } .filters .q { grid-column: 1 / -1; } }
+h1 { font-size: 1.6rem; margin: 0 0 14px; }
+.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
+.tabs a { padding: 9px 14px; color: var(--muted); text-decoration: none; font-weight: 600;
+  border-bottom: 2px solid transparent; margin-bottom: -1px; }
+.tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
+.tabs .n { font-weight: 400; font-size: .8rem; margin-left: 4px; }
+.sub { color: var(--muted); margin: 0 0 16px; }
+.filters { display: grid; gap: 10px; background: var(--surface); border: 1px solid var(--border);
+  border-radius: 10px; padding: 12px; }
+#provas .filters { grid-template-columns: 1.6fr 1.4fr 1.2fr 0.7fr auto; }
+#concursos .filters { grid-template-columns: 1.8fr 0.9fr 1.3fr auto auto; }
+@media (max-width: 760px) {
+  #provas .filters, #concursos .filters { grid-template-columns: 1fr 1fr; }
+  .filters .q { grid-column: 1 / -1; }
+}
 label { display: flex; flex-direction: column; gap: 4px; font-size: .8rem; color: var(--muted); }
+label.check { flex-direction: row; align-items: center; gap: 6px; align-self: end; padding-bottom: 9px;
+  font-size: .9rem; color: var(--text); white-space: nowrap; }
 input, select, button { font: inherit; color: var(--text); background: var(--bg);
   border: 1px solid var(--border); border-radius: 7px; padding: 8px 10px; min-width: 0; }
+input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--accent); }
 button { cursor: pointer; align-self: end; }
 button:hover { border-color: var(--accent); }
 .count { margin: 14px 2px 8px; color: var(--muted); font-size: .9rem; }
@@ -43,125 +59,234 @@ th { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color:
 tbody tr:hover { background: var(--row-hover); }
 td a { color: var(--accent); text-decoration: none; font-weight: 500; }
 td a:hover { text-decoration: underline; }
+td small { display: block; color: var(--muted); }
 .tag { display: inline-block; background: var(--accent-soft); color: var(--accent);
   border-radius: 999px; padding: 1px 9px; font-size: .8rem; white-space: nowrap; }
+.novo { background: var(--new-soft); color: var(--new); margin-left: 6px; font-weight: 600; }
+.urgente { color: var(--new); font-weight: 600; }
 @media (max-width: 640px) {
   thead { display: none; }
   table, tbody, tr, td { display: block; }
   tr { border-bottom: 1px solid var(--border); padding: 8px 0; }
   td { border: 0; padding: 2px 12px; }
-  td.ano, td.banca { display: inline-block; }
+  td.inline { display: inline-block; }
 }
 .more { display: block; margin: 14px auto 0; }
+[hidden] { display: none !important; }
 footer { margin-top: 28px; color: var(--muted); font-size: .82rem; }
 footer a { color: var(--accent); }
 </style>
 </head>
 <body>
 <main>
-  <h1>Provas de Enfermeiro</h1>
-  <p class="sub">Concursos de 2022 em diante. Clique na prova para abrir a página de download no PCI Concursos.</p>
+  <h1>Enfermeiro: provas e concursos</h1>
+  <nav class="tabs">
+    <a href="#provas" data-tab="provas">Provas <span class="n" id="n-provas"></span></a>
+    <a href="#concursos" data-tab="concursos">Concursos abertos <span class="n" id="n-concursos"></span></a>
+  </nav>
 
-  <div class="filters">
-    <label class="q">Cargo ou órgão
-      <input id="q" type="search" placeholder="ex.: UTI, obstetra, Prefeitura de Campinas…">
-    </label>
-    <label>Especialidade
-      <select id="esp"><option value="">Todas</option></select>
-    </label>
-    <label>Banca
-      <select id="banca"><option value="">Todas</option></select>
-    </label>
-    <label>Ano
-      <select id="ano"><option value="">Todos</option></select>
-    </label>
-    <button id="limpar" type="button">Limpar</button>
-  </div>
+  <section id="provas">
+    <p class="sub">Provas de 2022 em diante. Clique na prova para abrir a página de download no PCI Concursos.</p>
+    <div class="filters">
+      <label class="q">Cargo ou órgão
+        <input id="p-q" type="search" placeholder="ex.: UTI, obstetra, Prefeitura de Campinas…">
+      </label>
+      <label>Especialidade
+        <select id="p-esp"><option value="">Todas</option></select>
+      </label>
+      <label>Banca
+        <select id="p-banca"><option value="">Todas</option></select>
+      </label>
+      <label>Ano
+        <select id="p-ano"><option value="">Todos</option></select>
+      </label>
+      <button id="p-limpar" type="button">Limpar</button>
+    </div>
+    <p class="count" id="p-count">Carregando…</p>
+    <table>
+      <thead><tr><th>Cargo</th><th>Órgão</th><th>Banca</th><th>Ano</th></tr></thead>
+      <tbody id="p-rows"></tbody>
+    </table>
+    <button class="more" id="p-more" type="button" hidden>Mostrar mais</button>
+    <footer>Lista gerada a partir de <a href="https://www.pciconcursos.com.br/provas/enfermeiro" rel="noopener">pciconcursos.com.br</a>.
+      Os PDFs ficam hospedados lá. <span id="p-atualizado"></span></footer>
+  </section>
 
-  <p class="count" id="count">Carregando…</p>
-  <table>
-    <thead><tr><th>Cargo</th><th>Órgão</th><th>Banca</th><th>Ano</th></tr></thead>
-    <tbody id="rows"></tbody>
-  </table>
-  <button class="more" id="more" type="button" hidden>Mostrar mais</button>
-
-  <footer>
-    Lista gerada a partir de <a href="https://www.pciconcursos.com.br/provas/enfermeiro" rel="noopener">pciconcursos.com.br</a>.
-    Os PDFs ficam hospedados lá. <span id="atualizado"></span>
-  </footer>
+  <section id="concursos" hidden>
+    <p class="sub">Concursos com inscrições abertas que têm vaga para Enfermeiro. A lista se atualiza sozinha a cada 3 horas.</p>
+    <div class="filters">
+      <label class="q">Órgão ou cidade
+        <input id="c-q" type="search" placeholder="ex.: hospital, Belo Horizonte, EBSERH…">
+      </label>
+      <label>UF
+        <select id="c-uf"><option value="">Todas</option></select>
+      </label>
+      <label>Ordenar por
+        <select id="c-ordem">
+          <option value="fim">Inscrições acabando</option>
+          <option value="desde">Mais recentes</option>
+          <option value="salario">Maior salário</option>
+        </select>
+      </label>
+      <label class="check"><input id="c-novos" type="checkbox"> Só novos (7 dias)</label>
+      <button id="c-limpar" type="button">Limpar</button>
+    </div>
+    <p class="count" id="c-count">Carregando…</p>
+    <table>
+      <thead><tr><th>Órgão</th><th>UF</th><th>Vagas / salário</th><th>Inscrições até</th></tr></thead>
+      <tbody id="c-rows"></tbody>
+    </table>
+    <footer>Fonte: <a href="https://www.pciconcursos.com.br/vagas/enfermeiro" rel="noopener">pciconcursos.com.br/vagas/enfermeiro</a>.
+      Confira sempre o edital. <span id="c-atualizado"></span></footer>
+  </section>
 </main>
 <script>
 const PAGE = 100;
+const DAY = 86400000;
 const $ = id => document.getElementById(id);
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
-let data = [], filtered = [], shown = 0;
+const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+const fillSelect = (el, values) => { for (const v of values) el.add(new Option(v, v)); };
+const params = new URLSearchParams(location.search);
 
-function esc(s) {
-  return s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+/* ---------- abas ---------- */
+function showTab() {
+  const tab = location.hash === "#concursos" ? "concursos" : "provas";
+  for (const a of document.querySelectorAll(".tabs a"))
+    a.toggleAttribute("aria-current", a.dataset.tab === tab) && a.setAttribute("aria-current", "page");
+  $("provas").hidden = tab !== "provas";
+  $("concursos").hidden = tab !== "concursos";
 }
+addEventListener("hashchange", () => { showTab(); writeUrl(location.hash === "#concursos" ? cKeys : pKeys); });
+showTab();
 
-function fillSelect(el, values) {
-  for (const v of values) el.add(new Option(v, v));
-}
-
-function readUrl() {
-  const p = new URLSearchParams(location.search);
-  $("q").value = p.get("q") || "";
-  $("esp").value = p.get("esp") || "";
-  $("banca").value = p.get("banca") || "";
-  $("ano").value = p.get("ano") || "";
-}
-
-function writeUrl() {
+function writeUrl(keys) {
   const p = new URLSearchParams();
-  for (const k of ["q", "esp", "banca", "ano"]) if ($(k).value) p.set(k, $(k).value);
-  history.replaceState(null, "", p.toString() ? "?" + p : location.pathname);
+  for (const [k, el] of keys) {
+    const v = el.type === "checkbox" ? (el.checked ? "1" : "") : el.value;
+    if (v) p.set(k, v);
+  }
+  history.replaceState(null, "", (p.toString() ? "?" + p : location.pathname) + location.hash);
 }
 
-function apply() {
-  const terms = norm($("q").value).split(/\s+/).filter(Boolean);
-  const esp = $("esp").value, banca = $("banca").value, ano = $("ano").value;
-  filtered = data.filter(r =>
+/* ---------- provas ---------- */
+const P = { data: [], filtered: [], shown: 0 };
+const pKeys = [["q", $("p-q")], ["esp", $("p-esp")], ["banca", $("p-banca")], ["ano", $("p-ano")]];
+
+function pApply() {
+  const terms = norm($("p-q").value).split(/\s+/).filter(Boolean);
+  const esp = $("p-esp").value, banca = $("p-banca").value, ano = $("p-ano").value;
+  P.filtered = P.data.filter(r =>
     (!esp || r.esp === esp) &&
     (!banca || r.banca === banca) &&
     (!ano || r.ano === ano) &&
     terms.every(t => r._s.includes(t)));
-  shown = 0;
-  $("rows").innerHTML = "";
-  render();
-  writeUrl();
+  P.shown = 0;
+  $("p-rows").innerHTML = "";
+  pRender();
+  writeUrl(location.hash === "#concursos" ? cKeys : pKeys);
 }
 
-function render() {
-  const slice = filtered.slice(shown, shown + PAGE);
-  $("rows").insertAdjacentHTML("beforeend", slice.map(r =>
+function pRender() {
+  const slice = P.filtered.slice(P.shown, P.shown + PAGE);
+  $("p-rows").insertAdjacentHTML("beforeend", slice.map(r =>
     `<tr><td><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.cargo)}</a></td>` +
-    `<td>${esc(r.orgao)}</td><td class="banca"><span class="tag">${esc(r.banca)}</span></td>` +
-    `<td class="ano">${r.ano}</td></tr>`).join(""));
-  shown += slice.length;
-  $("count").innerHTML = `<b>${filtered.length.toLocaleString("pt-BR")}</b> de ${data.length.toLocaleString("pt-BR")} provas`;
-  $("more").hidden = shown >= filtered.length;
+    `<td>${esc(r.orgao)}</td><td class="inline"><span class="tag">${esc(r.banca)}</span></td>` +
+    `<td class="inline">${r.ano}</td></tr>`).join(""));
+  P.shown += slice.length;
+  $("p-count").innerHTML = `<b>${P.filtered.length.toLocaleString("pt-BR")}</b> de ${P.data.length.toLocaleString("pt-BR")} provas`;
+  $("p-more").hidden = P.shown >= P.filtered.length;
 }
 
 fetch("provas.json").then(r => r.json()).then(j => {
-  data = j.provas.map(r => ({ ...r, _s: norm(`${r.cargo} ${r.orgao} ${r.banca}`) }));
+  P.data = j.provas.map(r => ({ ...r, _s: norm(`${r.cargo} ${r.orgao} ${r.banca}`) }));
   const espCount = {};
-  for (const r of data) espCount[r.esp] = (espCount[r.esp] || 0) + 1;
-  fillSelect($("esp"), Object.keys(espCount).sort((a, b) => espCount[b] - espCount[a]));
-  fillSelect($("banca"), [...new Set(data.map(r => r.banca))].sort((a, b) => a.localeCompare(b, "pt-BR")));
-  fillSelect($("ano"), [...new Set(data.map(r => r.ano))].sort().reverse());
-  $("atualizado").textContent = `Atualizado em ${j.atualizado}.`;
-  readUrl();
-  apply();
-}).catch(() => { $("count").textContent = "Não foi possível carregar a lista."; });
+  for (const r of P.data) espCount[r.esp] = (espCount[r.esp] || 0) + 1;
+  fillSelect($("p-esp"), Object.keys(espCount).sort((a, b) => espCount[b] - espCount[a]));
+  fillSelect($("p-banca"), [...new Set(P.data.map(r => r.banca))].sort((a, b) => a.localeCompare(b, "pt-BR")));
+  fillSelect($("p-ano"), [...new Set(P.data.map(r => r.ano))].sort().reverse());
+  $("p-atualizado").textContent = `Atualizado em ${j.atualizado}.`;
+  $("n-provas").textContent = P.data.length.toLocaleString("pt-BR");
+  if (location.hash !== "#concursos") for (const [k, el] of pKeys) el.value = params.get(k) || "";
+  pApply();
+}).catch(() => { $("p-count").textContent = "Não foi possível carregar a lista."; });
 
-let t;
-$("q").addEventListener("input", () => { clearTimeout(t); t = setTimeout(apply, 150); });
-$("esp").addEventListener("change", apply);
-$("banca").addEventListener("change", apply);
-$("ano").addEventListener("change", apply);
-$("more").addEventListener("click", render);
-$("limpar").addEventListener("click", () => { $("q").value = $("esp").value = $("banca").value = $("ano").value = ""; apply(); });
+let pt;
+$("p-q").addEventListener("input", () => { clearTimeout(pt); pt = setTimeout(pApply, 150); });
+for (const id of ["p-esp", "p-banca", "p-ano"]) $(id).addEventListener("change", pApply);
+$("p-more").addEventListener("click", pRender);
+$("p-limpar").addEventListener("click", () => { for (const [, el] of pKeys) el.value = ""; pApply(); });
+
+/* ---------- concursos ---------- */
+const C = { data: [], inicio: "" };
+const cKeys = [["q", $("c-q")], ["uf", $("c-uf")], ["ordem", $("c-ordem")], ["novos", $("c-novos")]];
+const today = new Date(new Date().toDateString());
+const parseDate = s => s ? new Date(s + "T00:00:00") : null;
+const fmtDate = d => d.toLocaleDateString("pt-BR");
+
+function salario(texto) {
+  const m = texto.match(/R\$\s*([\d.]+,\d{2})/);
+  return m ? parseFloat(m[1].replace(/\./g, "").replace(",", ".")) : 0;
+}
+
+function cApply() {
+  const terms = norm($("c-q").value).split(/\s+/).filter(Boolean);
+  const uf = $("c-uf").value, ordem = $("c-ordem").value, soNovos = $("c-novos").checked;
+  const rows = C.data.filter(r =>
+    (!uf || r.uf === uf) &&
+    (!soNovos || r._novo) &&
+    terms.every(t => r._s.includes(t)));
+  const cmp = {
+    fim: (a, b) => (a._fim || Infinity) - (b._fim || Infinity),
+    desde: (a, b) => b.desde.localeCompare(a.desde) || (a._fim - b._fim),
+    salario: (a, b) => b._sal - a._sal,
+  }[ordem];
+  rows.sort(cmp);
+  $("c-rows").innerHTML = rows.map(r => {
+    const dias = r._fim ? Math.round((r._fim - today) / DAY) : null;
+    const fim = r._fim
+      ? `<span class="${dias <= 3 ? "urgente" : ""}">${fmtDate(r._fim)}</span>` +
+        `<small>${dias === 0 ? "termina hoje" : dias === 1 ? "falta 1 dia" : `faltam ${dias} dias`}</small>`
+      : esc(r.inscricoes);
+    return `<tr><td><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.orgao)}</a>` +
+      `${r._novo ? '<span class="tag novo">novo</span>' : ""}<small>${esc(r.cargos)} · ${esc(r.escolaridade)}</small></td>` +
+      `<td class="inline"><span class="tag">${esc(r.uf)}</span></td>` +
+      `<td class="inline">${esc(r.vagas)}</td><td>${fim}</td></tr>`;
+  }).join("");
+  $("c-count").innerHTML = `<b>${rows.length}</b> de ${C.data.length} concursos abertos`;
+  if (location.hash === "#concursos") writeUrl(cKeys);
+}
+
+fetch("concursos.json", { cache: "no-cache" }).then(r => r.json()).then(j => {
+  C.data = j.concursos.map(r => {
+    const desde = parseDate(r.desde);
+    return {
+      ...r,
+      _fim: parseDate(r.fim),
+      _sal: salario(r.vagas),
+      _novo: r.desde > j.inicio && today - desde <= 7 * DAY,
+      _s: norm(`${r.orgao} ${r.uf} ${r.cargos} ${r.vagas}`),
+    };
+  }).filter(r => !r._fim || r._fim >= today);
+  const ufs = [...new Set(C.data.map(r => r.uf))].filter(u => u !== "Nacional").sort();
+  fillSelect($("c-uf"), ["Nacional", ...ufs]);
+  $("c-atualizado").textContent = `Última mudança detectada em ${j.atualizado}.`;
+  $("n-concursos").textContent = C.data.length;
+  if (location.hash === "#concursos") {
+    for (const [k, el] of cKeys) {
+      if (el.type === "checkbox") el.checked = params.get(k) === "1";
+      else if (params.get(k)) el.value = params.get(k);
+    }
+  }
+  cApply();
+}).catch(() => { $("c-count").textContent = "Não foi possível carregar os concursos."; });
+
+let ct;
+$("c-q").addEventListener("input", () => { clearTimeout(ct); ct = setTimeout(cApply, 150); });
+for (const id of ["c-uf", "c-ordem", "c-novos"]) $(id).addEventListener("change", cApply);
+$("c-limpar").addEventListener("click", () => {
+  $("c-q").value = $("c-uf").value = ""; $("c-ordem").value = "fim"; $("c-novos").checked = false; cApply();
+});
 </script>
 </body>
 </html>
