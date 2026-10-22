@@ -177,33 +177,38 @@ input[type="search"]:focus, select:focus { outline: none; border-color: var(--pr
 .chip-new { background: var(--cyan-soft); color: var(--cyan-text); }
 .chip-new::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); }
 
-/* ---------- cards de concurso ---------- */
-.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: var(--s3); }
-.card {
-  display: grid; grid-template-rows: auto 1fr auto; gap: var(--s3); min-width: 0;
-  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
-  padding: var(--s4); transition: border-color .15s, transform .15s;
+/* ---------- lista de concursos (uma linha por concurso) ---------- */
+.crow {
+  display: grid; grid-template-columns: 64px minmax(0, 1fr) 96px 120px 128px;
+  gap: var(--s4); align-items: center; padding: var(--s3) var(--s4); border-top: 1px solid var(--line);
 }
-.card:hover { border-color: var(--primary); transform: translateY(-1px); }
-.card.is-new { border-color: color-mix(in srgb, var(--cyan) 45%, var(--line)); }
-.card-top { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); }
-.card h2 { font-size: 1.02rem; font-weight: 600; line-height: 1.3; letter-spacing: -.005em; }
-.card h2 a { color: var(--fg); text-decoration: none; }
-.card h2 a:hover { color: var(--link); }
-.card-meta { color: var(--muted); font-size: .84rem; margin-top: var(--s1); }
-.card-foot {
-  display: flex; justify-content: space-between; align-items: end; gap: var(--s3);
-  padding-top: var(--s3); border-top: 1px solid var(--line);
+.crow:first-child { border-top: 0; }
+.crow.head { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--surface-2); }
+.crow:not(.head):hover { background: var(--surface-2); }
+.crow.is-new { box-shadow: inset 3px 0 0 var(--cyan); }
+.crow .org { min-width: 0; display: flex; align-items: center; gap: var(--s2); flex-wrap: wrap; }
+.crow .org a { color: var(--fg); text-decoration: none; font-weight: 600; }
+.crow .org a:hover { color: var(--link); }
+.crow .org small { flex-basis: 100%; color: var(--muted); font-size: .8rem; }
+.crow .vagas, .crow .sal { font-size: .9rem; font-variant-numeric: tabular-nums; }
+.crow .vagas { color: var(--muted); }
+.crow .sal { font-weight: 600; }
+.crow .due { font-family: var(--font-data); font-size: .85rem; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
+.crow .due span { font-family: var(--font-body); font-weight: 600; color: var(--muted); }
+.crow .due.soon span { color: var(--warn); }
+.crow .due.last span { color: var(--danger); }
+.crow .r { text-align: right; }
+.crow abbr { text-decoration: none; cursor: help; }
+.crow .vs { display: contents; }
+@media (max-width: 680px) {
+  .crow { grid-template-columns: minmax(0, 1fr) auto; gap: 4px var(--s3); padding: var(--s3); }
+  .crow.head { display: none; }
+  .crow .org { grid-row: 1; grid-column: 1; }
+  .crow .uf { grid-row: 1; grid-column: 2; justify-self: end; align-self: start; }
+  .crow .vs { display: flex; gap: var(--s2); grid-row: 2; grid-column: 1; }
+  .crow .vs .vagas::after { content: "·"; margin-left: var(--s2); }
+  .crow .due { grid-row: 2; grid-column: 2; }
 }
-.pay { min-width: 0; }
-.pay small, .due small { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-.pay strong { display: block; font-weight: 600; font-size: .92rem; overflow-wrap: anywhere; }
-.due { text-align: right; flex: none; }
-.due .date { font-family: var(--font-data); font-size: .9rem; font-variant-numeric: tabular-nums; }
-.due .left { display: inline-block; margin-top: 4px; padding: 1px 8px; border-radius: 999px; font-size: .74rem; font-weight: 600;
-  background: var(--surface-2); color: var(--muted); }
-.due .left.soon { background: var(--warn-soft); color: var(--warn); }
-.due .left.last { background: var(--danger-soft); color: var(--danger); }
 
 /* ---------- lista de provas ---------- */
 .list { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
@@ -286,7 +291,10 @@ input[type="search"]:focus, select:focus { outline: none; border-color: var(--pr
         <button class="btn-ghost" id="c-limpar" type="button">Limpar</button>
       </div>
       <p class="count" id="c-count">Carregando concursos…</p>
-      <div class="cards" id="c-rows"></div>
+      <div class="list">
+        <div class="crow head"><span>UF</span><span>Órgão</span><span>Vagas</span><span>Salário até</span><span class="r">Inscrições até</span></div>
+        <div id="c-rows"></div>
+      </div>
     </section>
 
     <section id="provas" hidden>
@@ -426,12 +434,22 @@ function salario(texto) {
 }
 
 function prazo(r) {
-  if (!r._fim) return `<div class="due"><small>Inscrições</small><span class="date">${esc(r.inscricoes)}</span></div>`;
+  if (!r._fim) return `<div class="due">${esc(r.inscricoes)}</div>`;
   const dias = Math.round((r._fim - today) / DAY);
-  const texto = dias === 0 ? "termina hoje" : dias === 1 ? "falta 1 dia" : `faltam ${dias} dias`;
+  const texto = dias === 0 ? "hoje" : dias === 1 ? "amanhã" : `${dias} dias`;
   const cls = dias <= 2 ? "last" : dias <= 7 ? "soon" : "";
-  return `<div class="due"><small>Inscrições até</small><span class="date">${r._fim.toLocaleDateString("pt-BR")}</span><br>` +
-    `<span class="left ${cls}">${texto}</span></div>`;
+  const data = r._fim.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" });
+  return `<div class="due ${cls}">${data} · <span>${texto}</span></div>`;
+}
+
+// "10 vagas até R$ 23.143,62" -> vagas "10", salário "R$ 23.143"; "Cadastro de reserva até ..." -> "CR"
+function resumo(texto) {
+  const n = texto.match(/^(\d[\d.]*)\s+vagas?/i);
+  const qtd = n ? Number(n[1].replace(/\./g, "")) : 0;
+  const vagas = n ? `${fmt(qtd)} ${qtd === 1 ? "vaga" : "vagas"}`
+    : /cadastro|^cr\b/i.test(texto) ? '<abbr title="Cadastro de reserva">CR</abbr>' : "–";
+  const s = texto.match(/R\$\s*([\d.]+)(,\d{2})?/);
+  return { vagas, sal: s ? `R$ ${s[1]}` : "–" };
 }
 
 function cApply() {
@@ -447,15 +465,17 @@ function cApply() {
     salario: (a, b) => b._sal - a._sal,
   }[ordem];
   rows.sort(cmp);
-  $("c-rows").innerHTML = rows.length ? rows.map(r =>
-    `<article class="card${r._novo ? " is-new" : ""}">` +
-      `<div class="card-top"><span class="chip chip-uf">${esc(r.uf)}</span>` +
-      `${r._novo ? '<span class="chip chip-new">novo</span>' : ""}</div>` +
-      `<div><h2><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.orgao)}</a></h2>` +
-      `<div class="card-meta">${esc(r.cargos)} · ${esc(r.escolaridade)}</div></div>` +
-      `<div class="card-foot"><div class="pay"><small>Vagas e salário</small><strong>${esc(r.vagas)}</strong></div>${prazo(r)}</div>` +
-    `</article>`).join("") :
-    '<div class="empty" style="grid-column:1/-1"><b>Nenhum concurso com esses filtros</b>Tente outra UF ou desmarque "Só novos".</div>';
+  $("c-rows").innerHTML = rows.length ? rows.map(r => {
+    const { vagas, sal } = resumo(r.vagas);
+    const cargo = /^v[aá]rios cargos$/i.test(r.cargos) ? "" : `<small>${esc(r.cargos)}</small>`;
+    return `<div class="crow${r._novo ? " is-new" : ""}">` +
+      `<div class="uf"><span class="chip chip-uf">${esc(r.uf === "Nacional" ? "BR" : r.uf)}</span></div>` +
+      `<div class="org"><a href="${esc(r.link)}" target="_blank" rel="noopener" title="${esc(r.vagas)}">${esc(r.orgao)}</a>` +
+      `${r._novo ? '<span class="chip chip-new">novo</span>' : ""}${cargo}</div>` +
+      `<div class="vs"><div class="vagas">${vagas}</div><div class="sal">${sal}</div></div>` +
+      prazo(r) + `</div>`;
+  }).join("") :
+    '<div class="empty"><b>Nenhum concurso com esses filtros</b>Tente outra UF ou desmarque "Só novos".</div>';
   $("c-count").innerHTML = `<b>${rows.length}</b> de ${C.data.length} concursos abertos`;
   if (currentTab() === "concursos") writeUrl(cKeys);
 }
