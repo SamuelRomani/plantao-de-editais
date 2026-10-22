@@ -2,144 +2,324 @@
 <html lang="pt-BR">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Provas de Enfermeiro</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Enfermagem em Concurso</title>
 <meta name="description" content="Provas de concurso para Enfermeiro (2022 em diante) e concursos com inscrições abertas, com filtros. Fonte: PCI Concursos.">
+<meta name="theme-color" content="#0F172A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%232563EB'/%3E%3Cpath d='M13 7h6v6h6v6h-6v6h-6v-6H7v-6h6z' fill='white'/%3E%3C/svg%3E">
 <style>
+/* Layout: cabeçalho com marca, resumo em números, abas segmentadas; concursos em cards, provas em lista densa.
+   Design system: azul elétrico = ação, roxo = classificação (banca/especialidade), ciano = novidade, navy = base. */
 :root {
-  --bg: #f6f7f9; --surface: #ffffff; --text: #1b1f24; --muted: #5d6673;
-  --border: #dde1e6; --accent: #0b7a6f; --accent-soft: #e3f3f1; --row-hover: #f1f4f7;
-  --new: #b4500a; --new-soft: #fdeedd;
+  color-scheme: dark;
+  --bg: #0F172A;            /* fundo escuro / preto suave */
+  --surface: #162036;       /* cards e painéis */
+  --surface-2: #1C2842;     /* campos, hover */
+  --line: #26334F;
+  --fg: #E7ECF6;
+  --muted: #94A1BB;
+  --primary: #2563EB;       /* azul elétrico: botões, aba ativa */
+  --primary-fg: #FFFFFF;
+  --link: #6EA2FF;          /* azul em texto, legível no escuro */
+  --violet: #7C3AED;        /* roxo vibrante */
+  --violet-text: #B49BFF;
+  --violet-soft: rgba(124, 58, 237, .16);
+  --cyan: #06B6D4;          /* ciano brilhante */
+  --cyan-text: #4FD8EE;
+  --cyan-soft: rgba(6, 182, 212, .14);
+  --blue-soft: rgba(37, 99, 235, .16);
+  --warn: #F5B544;
+  --warn-soft: rgba(245, 181, 68, .14);
+  --danger: #FF7A85;
+  --danger-soft: rgba(255, 122, 133, .14);
+  --shadow: 0 1px 2px rgba(2, 6, 23, .5), 0 8px 24px rgba(2, 6, 23, .35);
+  --ring: 0 0 0 3px rgba(37, 99, 235, .45);
+
+  --font-display: "Sora", "Segoe UI", system-ui, sans-serif;
+  --font-body: "Figtree", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --font-data: "JetBrains Mono", ui-monospace, "Cascadia Mono", Consolas, monospace;
+
+  --r-sm: 8px; --r-md: 12px; --r-lg: 18px;
+  --s1: 4px; --s2: 8px; --s3: 12px; --s4: 16px; --s5: 24px; --s6: 32px; --s7: 48px;
 }
-@media (prefers-color-scheme: dark) {
-  :root:not([data-theme="light"]) {
-    --bg: #111418; --surface: #1a1e23; --text: #e8eaed; --muted: #9aa3ad;
-    --border: #2c323a; --accent: #4cc5b6; --accent-soft: #173431; --row-hover: #20262c;
-    --new: #f2a35e; --new-soft: #3a2614;
+@media (prefers-color-scheme: light) {
+  :root:not([data-theme="dark"]) {
+    color-scheme: light;
+    --bg: #F4F6FB; --surface: #FFFFFF; --surface-2: #EEF2F9; --line: #DCE3EF;
+    --fg: #0F172A; --muted: #55627A;
+    --primary: #2563EB; --primary-fg: #FFFFFF; --link: #1D4ED8;
+    --violet: #7C3AED; --violet-text: #6D28D9; --violet-soft: rgba(124, 58, 237, .10);
+    --cyan: #06B6D4; --cyan-text: #0E7490; --cyan-soft: rgba(6, 182, 212, .12);
+    --blue-soft: rgba(37, 99, 235, .09);
+    --warn: #A15C00; --warn-soft: rgba(245, 158, 11, .14);
+    --danger: #C0263A; --danger-soft: rgba(225, 29, 72, .09);
+    --shadow: 0 1px 2px rgba(15, 23, 42, .06), 0 8px 24px rgba(15, 23, 42, .06);
   }
 }
-:root[data-theme="dark"] {
-  --bg: #111418; --surface: #1a1e23; --text: #e8eaed; --muted: #9aa3ad;
-  --border: #2c323a; --accent: #4cc5b6; --accent-soft: #173431; --row-hover: #20262c;
-  --new: #f2a35e; --new-soft: #3a2614;
+:root[data-theme="light"] {
+  color-scheme: light;
+  --bg: #F4F6FB; --surface: #FFFFFF; --surface-2: #EEF2F9; --line: #DCE3EF;
+  --fg: #0F172A; --muted: #55627A;
+  --primary: #2563EB; --primary-fg: #FFFFFF; --link: #1D4ED8;
+  --violet: #7C3AED; --violet-text: #6D28D9; --violet-soft: rgba(124, 58, 237, .10);
+  --cyan: #06B6D4; --cyan-text: #0E7490; --cyan-soft: rgba(6, 182, 212, .12);
+  --blue-soft: rgba(37, 99, 235, .09);
+  --warn: #A15C00; --warn-soft: rgba(245, 158, 11, .14);
+  --danger: #C0263A; --danger-soft: rgba(225, 29, 72, .09);
+  --shadow: 0 1px 2px rgba(15, 23, 42, .06), 0 8px 24px rgba(15, 23, 42, .06);
 }
+
+/* ---------- base ---------- */
 * { box-sizing: border-box; }
-body { margin: 0; background: var(--bg); color: var(--text);
-  font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-main { max-width: 1100px; margin: 0 auto; padding: 24px 16px 48px; }
-h1 { font-size: 1.6rem; margin: 0 0 14px; }
-.tabs { display: flex; gap: 4px; border-bottom: 1px solid var(--border); margin-bottom: 16px; }
-.tabs a { padding: 9px 14px; color: var(--muted); text-decoration: none; font-weight: 600;
-  border-bottom: 2px solid transparent; margin-bottom: -1px; }
-.tabs a[aria-current="page"] { color: var(--accent); border-bottom-color: var(--accent); }
-.tabs .n { font-weight: 400; font-size: .8rem; margin-left: 4px; }
-.sub { color: var(--muted); margin: 0 0 16px; }
-.filters { display: grid; gap: 10px; background: var(--surface); border: 1px solid var(--border);
-  border-radius: 10px; padding: 12px; }
-#provas .filters { grid-template-columns: 1.6fr 1.4fr 1.2fr 0.7fr auto; }
-#concursos .filters { grid-template-columns: 1.8fr 0.9fr 1.3fr auto auto; }
-@media (max-width: 760px) {
-  #provas .filters, #concursos .filters { grid-template-columns: 1fr 1fr; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 400 15px/1.5 var(--font-body);
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.wrap { max-width: 1120px; margin: 0 auto; }
+a { color: var(--link); }
+:focus-visible { outline: none; box-shadow: var(--ring); border-radius: var(--r-sm); }
+[hidden] { display: none !important; }
+h1, h2 { font-family: var(--font-display); text-wrap: balance; margin: 0; }
+.num { font-family: var(--font-data); font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+
+/* ---------- cabeçalho ---------- */
+.site-header {
+  display: flex; align-items: center; justify-content: space-between; gap: var(--s4);
+  padding-block: var(--s5) var(--s4);
+}
+.brand { display: flex; align-items: center; gap: var(--s3); text-decoration: none; color: var(--fg); }
+.brand-mark {
+  width: 40px; height: 40px; border-radius: 12px; flex: none; display: grid; place-items: center;
+  background: linear-gradient(135deg, var(--primary), var(--violet));
+  box-shadow: 0 6px 18px rgba(37, 99, 235, .35);
+}
+.brand-name { font-family: var(--font-display); font-weight: 700; font-size: 1.12rem; letter-spacing: -.01em; line-height: 1.15; }
+.brand-name span { display: block; font-family: var(--font-body); font-weight: 500; font-size: .78rem; color: var(--muted); letter-spacing: 0; }
+.icon-btn {
+  width: 40px; height: 40px; flex: none; display: grid; place-items: center; cursor: pointer;
+  background: var(--surface); color: var(--muted); border: 1px solid var(--line); border-radius: var(--r-md);
+}
+.icon-btn:hover { color: var(--fg); border-color: var(--primary); }
+
+/* ---------- abertura ---------- */
+.intro { padding-block: var(--s5) var(--s5); display: grid; gap: var(--s5); }
+.intro h1 { font-size: clamp(1.6rem, 4.2vw, 2.4rem); font-weight: 700; letter-spacing: -.02em; line-height: 1.12; max-width: 22ch; }
+.intro h1 em { font-style: normal; color: var(--cyan-text); }
+.stats { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--s3); max-width: 640px; }
+.stat {
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md);
+  padding: var(--s3) var(--s4); display: grid; gap: 2px; text-decoration: none; color: inherit;
+}
+a.stat:hover { border-color: var(--primary); }
+.stat b { font-family: var(--font-display); font-size: 1.5rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.stat span { font-size: .8rem; color: var(--muted); }
+.stat.is-new b { color: var(--cyan-text); }
+@media (max-width: 520px) { .stat b { font-size: 1.2rem; } .stat { padding: var(--s3); } }
+
+/* ---------- abas ---------- */
+.tabs {
+  display: inline-flex; gap: var(--s1); padding: var(--s1); margin-bottom: var(--s4);
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); max-width: 100%;
+}
+.tabs a {
+  padding: var(--s2) var(--s4); border-radius: var(--r-sm); text-decoration: none; white-space: nowrap;
+  color: var(--muted); font-weight: 600; font-size: .92rem; display: inline-flex; align-items: center; gap: var(--s2);
+}
+.tabs a:hover { color: var(--fg); }
+.tabs a[aria-current="page"] { background: var(--primary); color: var(--primary-fg); }
+.tabs .n { font-family: var(--font-data); font-size: .74rem; opacity: .8; }
+
+/* ---------- filtros ---------- */
+.panel-lead { color: var(--muted); margin: 0 0 var(--s4); max-width: 65ch; }
+.filters {
+  display: grid; gap: var(--s3); padding: var(--s4); align-items: end;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); box-shadow: var(--shadow);
+}
+#provas .filters { grid-template-columns: minmax(0, 1.7fr) repeat(2, minmax(0, 1.3fr)) minmax(0, .7fr) auto; }
+#concursos .filters { grid-template-columns: minmax(0, 1.8fr) minmax(0, .9fr) minmax(0, 1.3fr) auto auto; }
+@media (max-width: 820px) {
+  #provas .filters, #concursos .filters { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
   .filters .q { grid-column: 1 / -1; }
 }
-label { display: flex; flex-direction: column; gap: 4px; font-size: .8rem; color: var(--muted); }
-label.check { flex-direction: row; align-items: center; gap: 6px; align-self: end; padding-bottom: 9px;
-  font-size: .9rem; color: var(--text); white-space: nowrap; }
-input, select, button { font: inherit; color: var(--text); background: var(--bg);
-  border: 1px solid var(--border); border-radius: 7px; padding: 8px 10px; min-width: 0; }
-input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--accent); }
-button { cursor: pointer; align-self: end; }
-button:hover { border-color: var(--accent); }
-.count { margin: 14px 2px 8px; color: var(--muted); font-size: .9rem; }
-.count b { color: var(--text); }
-table { width: 100%; border-collapse: collapse; background: var(--surface);
-  border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
-th, td { text-align: left; padding: 9px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
-th { font-size: .78rem; text-transform: uppercase; letter-spacing: .04em; color: var(--muted); }
-tbody tr:hover { background: var(--row-hover); }
-td a { color: var(--accent); text-decoration: none; font-weight: 500; }
-td a:hover { text-decoration: underline; }
-td small { display: block; color: var(--muted); }
-.tag { display: inline-block; background: var(--accent-soft); color: var(--accent);
-  border-radius: 999px; padding: 1px 9px; font-size: .8rem; white-space: nowrap; }
-.novo { background: var(--new-soft); color: var(--new); margin-left: 6px; font-weight: 600; }
-.urgente { color: var(--new); font-weight: 600; }
-@media (max-width: 640px) {
-  thead { display: none; }
-  table, tbody, tr, td { display: block; }
-  tr { border-bottom: 1px solid var(--border); padding: 8px 0; }
-  td { border: 0; padding: 2px 12px; }
-  td.inline { display: inline-block; }
+.field { display: grid; gap: 6px; min-width: 0; }
+.field > span { font-size: .72rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+input[type="search"], select {
+  width: 100%; min-width: 0; font: inherit; font-size: .95rem; color: var(--fg);
+  background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--r-sm);
+  padding: 10px 12px; transition: border-color .15s;
 }
-.more { display: block; margin: 14px auto 0; }
-[hidden] { display: none !important; }
-footer { margin-top: 28px; color: var(--muted); font-size: .82rem; }
-footer a { color: var(--accent); }
+input[type="search"]::placeholder { color: var(--muted); opacity: .8; }
+input[type="search"]:focus, select:focus { outline: none; border-color: var(--primary); box-shadow: var(--ring); }
+.toggle { display: flex; align-items: center; gap: var(--s2); padding-block: 10px; font-size: .92rem; cursor: pointer; white-space: nowrap; }
+.toggle input { width: 18px; height: 18px; accent-color: var(--cyan); margin: 0; }
+.btn-ghost {
+  font: inherit; font-weight: 600; font-size: .9rem; cursor: pointer; padding: 10px 14px;
+  color: var(--link); background: transparent; border: 1px solid var(--line); border-radius: var(--r-sm);
+}
+.btn-ghost:hover { border-color: var(--primary); background: var(--blue-soft); }
+.count { margin: var(--s4) 2px var(--s3); color: var(--muted); font-size: .9rem; }
+.count b { color: var(--fg); font-variant-numeric: tabular-nums; }
+
+/* ---------- chips ---------- */
+.chip {
+  display: inline-flex; align-items: center; gap: 4px; white-space: nowrap;
+  padding: 2px 9px; border-radius: 999px; font-size: .76rem; font-weight: 600;
+}
+.chip-uf { background: var(--blue-soft); color: var(--link); font-family: var(--font-data); }
+.chip-banca { background: var(--violet-soft); color: var(--violet-text); }
+.chip-new { background: var(--cyan-soft); color: var(--cyan-text); }
+.chip-new::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); }
+
+/* ---------- cards de concurso ---------- */
+.cards { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr)); gap: var(--s3); }
+.card {
+  display: grid; grid-template-rows: auto 1fr auto; gap: var(--s3); min-width: 0;
+  background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg);
+  padding: var(--s4); transition: border-color .15s, transform .15s;
+}
+.card:hover { border-color: var(--primary); transform: translateY(-1px); }
+.card.is-new { border-color: color-mix(in srgb, var(--cyan) 45%, var(--line)); }
+.card-top { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); }
+.card h2 { font-size: 1.02rem; font-weight: 600; line-height: 1.3; letter-spacing: -.005em; }
+.card h2 a { color: var(--fg); text-decoration: none; }
+.card h2 a:hover { color: var(--link); }
+.card-meta { color: var(--muted); font-size: .84rem; margin-top: var(--s1); }
+.card-foot {
+  display: flex; justify-content: space-between; align-items: end; gap: var(--s3);
+  padding-top: var(--s3); border-top: 1px solid var(--line);
+}
+.pay { min-width: 0; }
+.pay small, .due small { display: block; font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.pay strong { display: block; font-weight: 600; font-size: .92rem; overflow-wrap: anywhere; }
+.due { text-align: right; flex: none; }
+.due .date { font-family: var(--font-data); font-size: .9rem; font-variant-numeric: tabular-nums; }
+.due .left { display: inline-block; margin-top: 4px; padding: 1px 8px; border-radius: 999px; font-size: .74rem; font-weight: 600;
+  background: var(--surface-2); color: var(--muted); }
+.due .left.soon { background: var(--warn-soft); color: var(--warn); }
+.due .left.last { background: var(--danger-soft); color: var(--danger); }
+
+/* ---------- lista de provas ---------- */
+.list { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
+.row {
+  display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.4fr) minmax(0, 1fr) 56px;
+  gap: var(--s4); align-items: center; padding: var(--s3) var(--s4); border-top: 1px solid var(--line);
+}
+.row:first-child { border-top: 0; }
+.row.head { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--surface-2); }
+.row:not(.head):hover { background: var(--surface-2); }
+.row a { color: var(--fg); text-decoration: none; font-weight: 600; }
+.row a:hover { color: var(--link); }
+.row .esp { display: block; font-size: .78rem; color: var(--violet-text); margin-top: 2px; }
+.row .org { color: var(--muted); font-size: .9rem; min-width: 0; }
+.row .ano { font-family: var(--font-data); color: var(--muted); text-align: right; font-variant-numeric: tabular-nums; }
+@media (max-width: 680px) {
+  .row { grid-template-columns: minmax(0, 1fr) auto; gap: 4px var(--s3); }
+  .row.head { display: none; }
+  .row .cargo { grid-column: 1 / -1; }
+  .row .org { grid-column: 1 / -1; }
+  .row .ano { text-align: right; }
+}
+.more { display: block; margin: var(--s4) auto 0; }
+
+/* ---------- vazio e rodapé ---------- */
+.empty { padding: var(--s6) var(--s4); text-align: center; color: var(--muted); }
+.empty b { display: block; color: var(--fg); font-family: var(--font-display); margin-bottom: var(--s1); }
+.site-footer {
+  margin-top: var(--s7); padding-block: var(--s5) var(--s6); border-top: 1px solid var(--line);
+  color: var(--muted); font-size: .84rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: var(--s2) var(--s5);
+}
 </style>
 </head>
 <body>
-<main>
-  <h1>Enfermeiro: provas e concursos</h1>
-  <nav class="tabs">
-    <a href="#provas" data-tab="provas">Provas <span class="n" id="n-provas"></span></a>
+<div class="wrap">
+  <header class="site-header">
+    <a class="brand" href="#concursos" aria-label="Enfermagem em Concurso, início">
+      <span class="brand-mark" aria-hidden="true">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M9 3h6v6h6v6h-6v6H9v-6H3V9h6z" fill="#fff"/></svg>
+      </span>
+      <span class="brand-name">Enfermagem em Concurso<span>Provas e editais para Enfermeiro</span></span>
+    </a>
+    <button class="icon-btn" id="theme" type="button" aria-label="Alternar tema claro e escuro" title="Alternar tema">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+    </button>
+  </header>
+
+  <section class="intro">
+    <h1>Encontre a próxima vaga e treine com as provas que <em>já caíram</em>.</h1>
+    <div class="stats">
+      <a class="stat" href="#concursos"><b class="num" id="st-abertos">–</b><span>concursos abertos</span></a>
+      <a class="stat is-new" href="#concursos" id="st-novos-link"><b class="num" id="st-novos">–</b><span>novos esta semana</span></a>
+      <a class="stat" href="#provas"><b class="num" id="st-provas">–</b><span>provas desde 2022</span></a>
+    </div>
+  </section>
+
+  <nav class="tabs" aria-label="Seções">
     <a href="#concursos" data-tab="concursos">Concursos abertos <span class="n" id="n-concursos"></span></a>
+    <a href="#provas" data-tab="provas">Provas <span class="n" id="n-provas"></span></a>
   </nav>
 
-  <section id="provas">
-    <p class="sub">Provas de 2022 em diante. Clique na prova para abrir a página de download no PCI Concursos.</p>
-    <div class="filters">
-      <label class="q">Cargo ou órgão
-        <input id="p-q" type="search" placeholder="ex.: UTI, obstetra, Prefeitura de Campinas…">
-      </label>
-      <label>Especialidade
-        <select id="p-esp"><option value="">Todas</option></select>
-      </label>
-      <label>Banca
-        <select id="p-banca"><option value="">Todas</option></select>
-      </label>
-      <label>Ano
-        <select id="p-ano"><option value="">Todos</option></select>
-      </label>
-      <button id="p-limpar" type="button">Limpar</button>
-    </div>
-    <p class="count" id="p-count">Carregando…</p>
-    <table>
-      <thead><tr><th>Cargo</th><th>Órgão</th><th>Banca</th><th>Ano</th></tr></thead>
-      <tbody id="p-rows"></tbody>
-    </table>
-    <button class="more" id="p-more" type="button" hidden>Mostrar mais</button>
-    <footer>Lista gerada a partir de <a href="https://www.pciconcursos.com.br/provas/enfermeiro" rel="noopener">pciconcursos.com.br</a>.
-      Os PDFs ficam hospedados lá. <span id="p-atualizado"></span></footer>
-  </section>
+  <main>
+    <section id="concursos">
+      <p class="panel-lead">Concursos com inscrições abertas que têm vaga para Enfermeiro. A lista se atualiza sozinha a cada 3 horas.</p>
+      <div class="filters">
+        <label class="field q"><span>Órgão ou cidade</span>
+          <input id="c-q" type="search" placeholder="Hospital, Porto Alegre, EBSERH…" autocomplete="off">
+        </label>
+        <label class="field"><span>UF</span>
+          <select id="c-uf"><option value="">Todas</option></select>
+        </label>
+        <label class="field"><span>Ordenar por</span>
+          <select id="c-ordem">
+            <option value="fim">Inscrições acabando</option>
+            <option value="desde">Mais recentes</option>
+            <option value="salario">Maior salário</option>
+          </select>
+        </label>
+        <label class="toggle"><input id="c-novos" type="checkbox"> Só novos (7 dias)</label>
+        <button class="btn-ghost" id="c-limpar" type="button">Limpar</button>
+      </div>
+      <p class="count" id="c-count">Carregando concursos…</p>
+      <div class="cards" id="c-rows"></div>
+    </section>
 
-  <section id="concursos" hidden>
-    <p class="sub">Concursos com inscrições abertas que têm vaga para Enfermeiro. A lista se atualiza sozinha a cada 3 horas.</p>
-    <div class="filters">
-      <label class="q">Órgão ou cidade
-        <input id="c-q" type="search" placeholder="ex.: hospital, Belo Horizonte, EBSERH…">
-      </label>
-      <label>UF
-        <select id="c-uf"><option value="">Todas</option></select>
-      </label>
-      <label>Ordenar por
-        <select id="c-ordem">
-          <option value="fim">Inscrições acabando</option>
-          <option value="desde">Mais recentes</option>
-          <option value="salario">Maior salário</option>
-        </select>
-      </label>
-      <label class="check"><input id="c-novos" type="checkbox"> Só novos (7 dias)</label>
-      <button id="c-limpar" type="button">Limpar</button>
-    </div>
-    <p class="count" id="c-count">Carregando…</p>
-    <table>
-      <thead><tr><th>Órgão</th><th>UF</th><th>Vagas / salário</th><th>Inscrições até</th></tr></thead>
-      <tbody id="c-rows"></tbody>
-    </table>
-    <footer>Fonte: <a href="https://www.pciconcursos.com.br/vagas/enfermeiro" rel="noopener">pciconcursos.com.br/vagas/enfermeiro</a>.
-      Confira sempre o edital. <span id="c-atualizado"></span></footer>
-  </section>
-</main>
+    <section id="provas" hidden>
+      <p class="panel-lead">Provas aplicadas de 2022 em diante. Clique no cargo para abrir a página de download no PCI Concursos.</p>
+      <div class="filters">
+        <label class="field q"><span>Cargo ou órgão</span>
+          <input id="p-q" type="search" placeholder="UTI, obstetra, Prefeitura de Campinas…" autocomplete="off">
+        </label>
+        <label class="field"><span>Especialidade</span>
+          <select id="p-esp"><option value="">Todas</option></select>
+        </label>
+        <label class="field"><span>Banca</span>
+          <select id="p-banca"><option value="">Todas</option></select>
+        </label>
+        <label class="field"><span>Ano</span>
+          <select id="p-ano"><option value="">Todos</option></select>
+        </label>
+        <button class="btn-ghost" id="p-limpar" type="button">Limpar</button>
+      </div>
+      <p class="count" id="p-count">Carregando provas…</p>
+      <div class="list" id="p-list">
+        <div class="row head"><span>Cargo</span><span>Órgão</span><span>Banca</span><span class="ano">Ano</span></div>
+        <div id="p-rows"></div>
+      </div>
+      <button class="btn-ghost more" id="p-more" type="button" hidden>Mostrar mais provas</button>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <span>Dados de <a href="https://www.pciconcursos.com.br/vagas/enfermeiro" rel="noopener">PCI Concursos</a>. Os PDFs e editais ficam hospedados lá; confira sempre o edital oficial.</span>
+    <span id="atualizado"></span>
+  </footer>
+</div>
 <script>
 const PAGE = 100;
 const DAY = 86400000;
@@ -147,24 +327,38 @@ const $ = id => document.getElementById(id);
 const norm = s => s.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase();
 const esc = s => String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 const fillSelect = (el, values) => { for (const v of values) el.add(new Option(v, v)); };
+const fmt = n => n.toLocaleString("pt-BR");
 const params = new URLSearchParams(location.search);
 
+/* ---------- tema ---------- */
+try { const t = localStorage.getItem("tema"); if (t) document.documentElement.dataset.theme = t; } catch (e) {}
+$("theme").addEventListener("click", () => {
+  const atual = document.documentElement.dataset.theme ||
+    (matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark");
+  const novo = atual === "dark" ? "light" : "dark";
+  document.documentElement.dataset.theme = novo;
+  try { localStorage.setItem("tema", novo); } catch (e) {}
+});
+
 /* ---------- abas ---------- */
+const currentTab = () => location.hash === "#provas" ? "provas" : "concursos";
 function showTab() {
-  const tab = location.hash === "#concursos" ? "concursos" : "provas";
-  for (const a of document.querySelectorAll(".tabs a"))
-    a.toggleAttribute("aria-current", a.dataset.tab === tab) && a.setAttribute("aria-current", "page");
+  const tab = currentTab();
+  for (const a of document.querySelectorAll(".tabs a")) {
+    if (a.dataset.tab === tab) a.setAttribute("aria-current", "page");
+    else a.removeAttribute("aria-current");
+  }
   $("provas").hidden = tab !== "provas";
   $("concursos").hidden = tab !== "concursos";
 }
-addEventListener("hashchange", () => { showTab(); writeUrl(location.hash === "#concursos" ? cKeys : pKeys); });
+addEventListener("hashchange", () => { showTab(); writeUrl(currentTab() === "concursos" ? cKeys : pKeys); });
 showTab();
 
 function writeUrl(keys) {
   const p = new URLSearchParams();
   for (const [k, el] of keys) {
     const v = el.type === "checkbox" ? (el.checked ? "1" : "") : el.value;
-    if (v) p.set(k, v);
+    if (v && !(k === "ordem" && v === "fim")) p.set(k, v);
   }
   history.replaceState(null, "", (p.toString() ? "?" + p : location.pathname) + location.hash);
 }
@@ -182,34 +376,37 @@ function pApply() {
     (!ano || r.ano === ano) &&
     terms.every(t => r._s.includes(t)));
   P.shown = 0;
-  $("p-rows").innerHTML = "";
+  $("p-rows").innerHTML = P.filtered.length ? "" :
+    '<div class="empty"><b>Nenhuma prova com esses filtros</b>Tente outra banca, outro ano ou limpe a busca.</div>';
   pRender();
-  writeUrl(location.hash === "#concursos" ? cKeys : pKeys);
+  if (currentTab() === "provas") writeUrl(pKeys);
 }
 
 function pRender() {
   const slice = P.filtered.slice(P.shown, P.shown + PAGE);
   $("p-rows").insertAdjacentHTML("beforeend", slice.map(r =>
-    `<tr><td><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.cargo)}</a></td>` +
-    `<td>${esc(r.orgao)}</td><td class="inline"><span class="tag">${esc(r.banca)}</span></td>` +
-    `<td class="inline">${r.ano}</td></tr>`).join(""));
+    `<div class="row"><div class="cargo"><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.cargo)}</a>` +
+    `<span class="esp">${esc(r.esp)}</span></div>` +
+    `<div class="org">${esc(r.orgao)}</div>` +
+    `<div><span class="chip chip-banca">${esc(r.banca)}</span></div>` +
+    `<div class="ano">${r.ano}</div></div>`).join(""));
   P.shown += slice.length;
-  $("p-count").innerHTML = `<b>${P.filtered.length.toLocaleString("pt-BR")}</b> de ${P.data.length.toLocaleString("pt-BR")} provas`;
+  $("p-count").innerHTML = `<b>${fmt(P.filtered.length)}</b> de ${fmt(P.data.length)} provas`;
   $("p-more").hidden = P.shown >= P.filtered.length;
 }
 
 fetch("provas.json").then(r => r.json()).then(j => {
-  P.data = j.provas.map(r => ({ ...r, _s: norm(`${r.cargo} ${r.orgao} ${r.banca}`) }));
+  P.data = j.provas.map(r => ({ ...r, _s: norm(`${r.cargo} ${r.orgao} ${r.banca} ${r.esp}`) }));
   const espCount = {};
   for (const r of P.data) espCount[r.esp] = (espCount[r.esp] || 0) + 1;
   fillSelect($("p-esp"), Object.keys(espCount).sort((a, b) => espCount[b] - espCount[a]));
   fillSelect($("p-banca"), [...new Set(P.data.map(r => r.banca))].sort((a, b) => a.localeCompare(b, "pt-BR")));
   fillSelect($("p-ano"), [...new Set(P.data.map(r => r.ano))].sort().reverse());
-  $("p-atualizado").textContent = `Atualizado em ${j.atualizado}.`;
-  $("n-provas").textContent = P.data.length.toLocaleString("pt-BR");
-  if (location.hash !== "#concursos") for (const [k, el] of pKeys) el.value = params.get(k) || "";
+  $("n-provas").textContent = fmt(P.data.length);
+  $("st-provas").textContent = fmt(P.data.length);
+  if (currentTab() === "provas") for (const [k, el] of pKeys) el.value = params.get(k) || "";
   pApply();
-}).catch(() => { $("p-count").textContent = "Não foi possível carregar a lista."; });
+}).catch(() => { $("p-count").textContent = "Não foi possível carregar as provas. Recarregue a página."; });
 
 let pt;
 $("p-q").addEventListener("input", () => { clearTimeout(pt); pt = setTimeout(pApply, 150); });
@@ -218,15 +415,23 @@ $("p-more").addEventListener("click", pRender);
 $("p-limpar").addEventListener("click", () => { for (const [, el] of pKeys) el.value = ""; pApply(); });
 
 /* ---------- concursos ---------- */
-const C = { data: [], inicio: "" };
+const C = { data: [] };
 const cKeys = [["q", $("c-q")], ["uf", $("c-uf")], ["ordem", $("c-ordem")], ["novos", $("c-novos")]];
 const today = new Date(new Date().toDateString());
 const parseDate = s => s ? new Date(s + "T00:00:00") : null;
-const fmtDate = d => d.toLocaleDateString("pt-BR");
 
 function salario(texto) {
   const m = texto.match(/R\$\s*([\d.]+,\d{2})/);
   return m ? parseFloat(m[1].replace(/\./g, "").replace(",", ".")) : 0;
+}
+
+function prazo(r) {
+  if (!r._fim) return `<div class="due"><small>Inscrições</small><span class="date">${esc(r.inscricoes)}</span></div>`;
+  const dias = Math.round((r._fim - today) / DAY);
+  const texto = dias === 0 ? "termina hoje" : dias === 1 ? "falta 1 dia" : `faltam ${dias} dias`;
+  const cls = dias <= 2 ? "last" : dias <= 7 ? "soon" : "";
+  return `<div class="due"><small>Inscrições até</small><span class="date">${r._fim.toLocaleDateString("pt-BR")}</span><br>` +
+    `<span class="left ${cls}">${texto}</span></div>`;
 }
 
 function cApply() {
@@ -242,45 +447,44 @@ function cApply() {
     salario: (a, b) => b._sal - a._sal,
   }[ordem];
   rows.sort(cmp);
-  $("c-rows").innerHTML = rows.map(r => {
-    const dias = r._fim ? Math.round((r._fim - today) / DAY) : null;
-    const fim = r._fim
-      ? `<span class="${dias <= 3 ? "urgente" : ""}">${fmtDate(r._fim)}</span>` +
-        `<small>${dias === 0 ? "termina hoje" : dias === 1 ? "falta 1 dia" : `faltam ${dias} dias`}</small>`
-      : esc(r.inscricoes);
-    return `<tr><td><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.orgao)}</a>` +
-      `${r._novo ? '<span class="tag novo">novo</span>' : ""}<small>${esc(r.cargos)} · ${esc(r.escolaridade)}</small></td>` +
-      `<td class="inline"><span class="tag">${esc(r.uf)}</span></td>` +
-      `<td class="inline">${esc(r.vagas)}</td><td>${fim}</td></tr>`;
-  }).join("");
+  $("c-rows").innerHTML = rows.length ? rows.map(r =>
+    `<article class="card${r._novo ? " is-new" : ""}">` +
+      `<div class="card-top"><span class="chip chip-uf">${esc(r.uf)}</span>` +
+      `${r._novo ? '<span class="chip chip-new">novo</span>' : ""}</div>` +
+      `<div><h2><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.orgao)}</a></h2>` +
+      `<div class="card-meta">${esc(r.cargos)} · ${esc(r.escolaridade)}</div></div>` +
+      `<div class="card-foot"><div class="pay"><small>Vagas e salário</small><strong>${esc(r.vagas)}</strong></div>${prazo(r)}</div>` +
+    `</article>`).join("") :
+    '<div class="empty" style="grid-column:1/-1"><b>Nenhum concurso com esses filtros</b>Tente outra UF ou desmarque "Só novos".</div>';
   $("c-count").innerHTML = `<b>${rows.length}</b> de ${C.data.length} concursos abertos`;
-  if (location.hash === "#concursos") writeUrl(cKeys);
+  if (currentTab() === "concursos") writeUrl(cKeys);
 }
 
 fetch("concursos.json", { cache: "no-cache" }).then(r => r.json()).then(j => {
-  C.data = j.concursos.map(r => {
-    const desde = parseDate(r.desde);
-    return {
-      ...r,
-      _fim: parseDate(r.fim),
-      _sal: salario(r.vagas),
-      _novo: r.desde > j.inicio && today - desde <= 7 * DAY,
-      _s: norm(`${r.orgao} ${r.uf} ${r.cargos} ${r.vagas}`),
-    };
-  }).filter(r => !r._fim || r._fim >= today);
+  C.data = j.concursos.map(r => ({
+    ...r,
+    _fim: parseDate(r.fim),
+    _sal: salario(r.vagas),
+    _novo: r.desde > j.inicio && today - parseDate(r.desde) <= 7 * DAY,
+    _s: norm(`${r.orgao} ${r.uf} ${r.cargos} ${r.vagas}`),
+  })).filter(r => !r._fim || r._fim >= today);
   const ufs = [...new Set(C.data.map(r => r.uf))].filter(u => u !== "Nacional").sort();
   fillSelect($("c-uf"), ["Nacional", ...ufs]);
-  $("c-atualizado").textContent = `Última mudança detectada em ${j.atualizado}.`;
+  const novos = C.data.filter(r => r._novo).length;
   $("n-concursos").textContent = C.data.length;
-  if (location.hash === "#concursos") {
+  $("st-abertos").textContent = C.data.length;
+  $("st-novos").textContent = novos;
+  $("atualizado").textContent = `Última mudança nos concursos: ${j.atualizado}`;
+  if (currentTab() === "concursos") {
     for (const [k, el] of cKeys) {
       if (el.type === "checkbox") el.checked = params.get(k) === "1";
       else if (params.get(k)) el.value = params.get(k);
     }
   }
   cApply();
-}).catch(() => { $("c-count").textContent = "Não foi possível carregar os concursos."; });
+}).catch(() => { $("c-count").textContent = "Não foi possível carregar os concursos. Recarregue a página."; });
 
+$("st-novos-link").addEventListener("click", () => { $("c-novos").checked = true; setTimeout(cApply); });
 let ct;
 $("c-q").addEventListener("input", () => { clearTimeout(ct); ct = setTimeout(cApply, 150); });
 for (const id of ["c-uf", "c-ordem", "c-novos"]) $(id).addEventListener("change", cApply);
