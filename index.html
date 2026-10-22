@@ -81,7 +81,7 @@ body {
   padding-left: max(16px, env(safe-area-inset-left, 0px));
   padding-right: max(16px, env(safe-area-inset-right, 0px));
 }
-.wrap { max-width: 1120px; margin: 0 auto; }
+.wrap { max-width: 1280px; margin: 0 auto; }
 a { color: var(--link); }
 :focus-visible { outline: none; box-shadow: var(--ring); border-radius: var(--r-sm); }
 [hidden] { display: none !important; }
@@ -177,38 +177,49 @@ input[type="search"]:focus, select:focus { outline: none; border-color: var(--pr
 .chip-new { background: var(--cyan-soft); color: var(--cyan-text); }
 .chip-new::before { content: ""; width: 6px; height: 6px; border-radius: 50%; background: var(--cyan); }
 
-/* ---------- lista de concursos (uma linha por concurso) ---------- */
-.crow {
-  display: grid; grid-template-columns: 64px minmax(0, 1fr) 96px 120px 128px;
-  gap: var(--s4); align-items: center; padding: var(--s3) var(--s4); border-top: 1px solid var(--line);
+/* ---------- tabela de concursos ---------- */
+.table-wrap { overflow-x: auto; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); }
+.ctable { width: 100%; min-width: 1100px; border-collapse: separate; border-spacing: 0; font-size: .88rem; }
+.ctable th, .ctable td { padding: 10px 12px; text-align: left; vertical-align: top; border-top: 1px solid var(--line); }
+.ctable thead th {
+  border-top: 0; background: var(--surface-2); white-space: nowrap;
+  font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted);
 }
-.crow:first-child { border-top: 0; }
-.crow.head { font-size: .7rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); background: var(--surface-2); }
-.crow:not(.head):hover { background: var(--surface-2); }
-.crow.is-new { box-shadow: inset 3px 0 0 var(--cyan); }
-.crow .org { min-width: 0; display: flex; align-items: center; gap: var(--s2); flex-wrap: wrap; }
-.crow .org a { color: var(--fg); text-decoration: none; font-weight: 600; }
-.crow .org a:hover { color: var(--link); }
-.crow .org small { flex-basis: 100%; color: var(--muted); font-size: .8rem; }
-.crow .vagas, .crow .sal { font-size: .9rem; font-variant-numeric: tabular-nums; }
-.crow .vagas { color: var(--muted); }
-.crow .sal { font-weight: 600; }
-.crow .due { font-family: var(--font-data); font-size: .85rem; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; }
-.crow .due span { font-family: var(--font-body); font-weight: 600; color: var(--muted); }
-.crow .due.soon span { color: var(--warn); }
-.crow .due.last span { color: var(--danger); }
-.crow .r { text-align: right; }
-.crow abbr { text-decoration: none; cursor: help; }
-.crow .vs { display: contents; }
-@media (max-width: 680px) {
-  .crow { grid-template-columns: minmax(0, 1fr) auto; gap: 4px var(--s3); padding: var(--s3); }
-  .crow.head { display: none; }
-  .crow .org { grid-row: 1; grid-column: 1; }
-  .crow .uf { grid-row: 1; grid-column: 2; justify-self: end; align-self: start; }
-  .crow .vs { display: flex; gap: var(--s2); grid-row: 2; grid-column: 1; }
-  .crow .vs .vagas::after { content: "·"; margin-left: var(--s2); }
-  .crow .due { grid-row: 2; grid-column: 2; }
+.ctable th button {
+  all: unset; cursor: pointer; display: inline-flex; align-items: center; gap: 4px; border-radius: 4px;
 }
+.ctable th button:hover { color: var(--fg); }
+.ctable th button:focus-visible { box-shadow: var(--ring); }
+.ctable th button::after { content: "↕"; opacity: .35; font-size: .8rem; }
+.ctable th[aria-sort] button { color: var(--link); }
+.ctable th[aria-sort="ascending"] button::after { content: "↑"; opacity: 1; }
+.ctable th[aria-sort="descending"] button::after { content: "↓"; opacity: 1; }
+.ctable tbody tr:hover td { background: var(--surface-2); }
+.ctable .num-col { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+/* órgão fixo à esquerda quando a tabela rola no celular */
+.ctable .org-col { position: sticky; left: 0; z-index: 1; background: var(--surface); min-width: 220px; max-width: 300px; }
+.ctable thead .org-col { background: var(--surface-2); z-index: 2; }
+.ctable tr.is-new .org-col { box-shadow: inset 3px 0 0 var(--cyan); }
+.ctable .org-col a { color: var(--fg); text-decoration: none; font-weight: 600; }
+.ctable .org-col a:hover { color: var(--link); }
+.ctable .org-col .chip-new { margin-left: 6px; vertical-align: 1px; }
+.ctable .muted { color: var(--muted); }
+.ctable .sal { font-weight: 600; }
+.ctable .date { font-family: var(--font-data); font-size: .82rem; white-space: nowrap; }
+.ctable abbr { text-decoration: none; cursor: help; }
+.esc { display: flex; gap: 4px; flex-wrap: nowrap; }
+.esc span { padding: 1px 6px; border-radius: 6px; font-size: .74rem; font-weight: 600; background: var(--surface-2); color: var(--muted); }
+.esc span.sup { background: var(--violet-soft); color: var(--violet-text); }
+.left { display: inline-block; padding: 1px 8px; border-radius: 999px; font-size: .76rem; font-weight: 600; white-space: nowrap;
+  background: var(--surface-2); color: var(--muted); }
+.left.soon { background: var(--warn-soft); color: var(--warn); }
+.left.last { background: var(--danger-soft); color: var(--danger); }
+@media (max-width: 600px) {
+  .ctable .org-col { min-width: 132px; max-width: 150px; font-size: .82rem; }
+  .ctable th, .ctable td { padding: 9px 10px; }
+}
+.scroll-hint { display: none; font-size: .8rem; color: var(--muted); margin: 0 2px var(--s2); }
+@media (max-width: 900px) { .scroll-hint { display: block; } }
 
 /* ---------- lista de provas ---------- */
 .list { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); overflow: hidden; }
@@ -283,17 +294,33 @@ input[type="search"]:focus, select:focus { outline: none; border-color: var(--pr
         <label class="field"><span>Ordenar por</span>
           <select id="c-ordem">
             <option value="fim">Inscrições acabando</option>
-            <option value="desde">Mais recentes</option>
+            <option value="desde">Adicionados por último</option>
             <option value="salario">Maior salário</option>
+            <option value="vagas">Mais vagas</option>
+            <option value="orgao">Órgão (A–Z)</option>
+            <option value="uf">UF (A–Z)</option>
           </select>
         </label>
         <label class="toggle"><input id="c-novos" type="checkbox"> Só novos (7 dias)</label>
         <button class="btn-ghost" id="c-limpar" type="button">Limpar</button>
       </div>
       <p class="count" id="c-count">Carregando concursos…</p>
-      <div class="list">
-        <div class="crow head"><span>UF</span><span>Órgão</span><span>Vagas</span><span>Salário até</span><span class="r">Inscrições até</span></div>
-        <div id="c-rows"></div>
+      <p class="scroll-hint">Arraste a tabela para o lado para ver todas as colunas.</p>
+      <div class="table-wrap">
+        <table class="ctable">
+          <thead><tr>
+            <th class="org-col" data-sort="orgao"><button type="button">Órgão</button></th>
+            <th data-sort="uf"><button type="button">UF</button></th>
+            <th>Cargos</th>
+            <th>Escolaridade</th>
+            <th class="num-col" data-sort="vagas"><button type="button">Vagas</button></th>
+            <th class="num-col" data-sort="salario"><button type="button">Salário até</button></th>
+            <th>Período de inscrição</th>
+            <th data-sort="fim"><button type="button">Prazo</button></th>
+            <th data-sort="desde"><button type="button">Adicionado</button></th>
+          </tr></thead>
+          <tbody id="c-rows"></tbody>
+        </table>
       </div>
     </section>
 
@@ -429,28 +456,39 @@ const today = new Date(new Date().toDateString());
 const parseDate = s => s ? new Date(s + "T00:00:00") : null;
 
 function salario(texto) {
-  const m = texto.match(/R\$\s*([\d.]+,\d{2})/);
-  return m ? parseFloat(m[1].replace(/\./g, "").replace(",", ".")) : 0;
+  const m = texto.match(/R\$\s*([\d.]+)(?:,(\d{2}))?/);
+  return m ? parseFloat(`${m[1].replace(/\./g, "")}.${m[2] || "00"}`) : 0;
 }
 
 function prazo(r) {
-  if (!r._fim) return `<div class="due">${esc(r.inscricoes)}</div>`;
+  if (!r._fim) return '<span class="muted">ver edital</span>';
   const dias = Math.round((r._fim - today) / DAY);
-  const texto = dias === 0 ? "hoje" : dias === 1 ? "amanhã" : `${dias} dias`;
+  const texto = dias === 0 ? "termina hoje" : dias === 1 ? "termina amanhã" : `faltam ${dias} dias`;
   const cls = dias <= 2 ? "last" : dias <= 7 ? "soon" : "";
-  const data = r._fim.toLocaleDateString("pt-BR", { day: "2-digit", month: "2-digit" });
-  return `<div class="due ${cls}">${data} · <span>${texto}</span></div>`;
+  return `<span class="left ${cls}">${texto}</span>`;
 }
 
-// "10 vagas até R$ 23.143,62" -> vagas "10", salário "R$ 23.143"; "Cadastro de reserva até ..." -> "CR"
-function resumo(texto) {
-  const n = texto.match(/^(\d[\d.]*)\s+vagas?/i);
-  const qtd = n ? Number(n[1].replace(/\./g, "")) : 0;
-  const vagas = n ? `${fmt(qtd)} ${qtd === 1 ? "vaga" : "vagas"}`
-    : /cadastro|^cr\b/i.test(texto) ? '<abbr title="Cadastro de reserva">CR</abbr>' : "–";
-  const s = texto.match(/R\$\s*([\d.]+)(,\d{2})?/);
-  return { vagas, sal: s ? `R$ ${s[1]}` : "–" };
+function vagasTexto(r) {
+  if (r._qtd) return fmt(r._qtd);
+  return /cadastro|^cr\b/i.test(r.vagas) ? '<abbr title="Cadastro de reserva">CR</abbr>' : '<span class="muted">–</span>';
 }
+
+const ESC = [["Fundamental", "Fund."], ["Médio", "Méd."], ["Técnico", "Téc."], ["Superior", "Sup."]];
+function escolaridade(texto) {
+  const tags = ESC.filter(([k]) => texto.includes(k))
+    .map(([k, curto]) => `<span class="${k === "Superior" ? "sup" : ""}" title="${k}">${curto}</span>`);
+  return tags.length ? `<div class="esc">${tags.join("")}</div>` : esc(texto);
+}
+
+const SORTS = {
+  fim: (a, b) => (a._fim || Infinity) - (b._fim || Infinity),
+  desde: (a, b) => b.desde.localeCompare(a.desde) || (a._fim - b._fim),
+  salario: (a, b) => b._sal - a._sal,
+  vagas: (a, b) => b._qtd - a._qtd,
+  orgao: (a, b) => a.orgao.localeCompare(b.orgao, "pt-BR"),
+  uf: (a, b) => a.uf.localeCompare(b.uf, "pt-BR") || a.orgao.localeCompare(b.orgao, "pt-BR"),
+};
+const SORT_DIR = { fim: "ascending", orgao: "ascending", uf: "ascending" };
 
 function cApply() {
   const terms = norm($("c-q").value).split(/\s+/).filter(Boolean);
@@ -459,23 +497,25 @@ function cApply() {
     (!uf || r.uf === uf) &&
     (!soNovos || r._novo) &&
     terms.every(t => r._s.includes(t)));
-  const cmp = {
-    fim: (a, b) => (a._fim || Infinity) - (b._fim || Infinity),
-    desde: (a, b) => b.desde.localeCompare(a.desde) || (a._fim - b._fim),
-    salario: (a, b) => b._sal - a._sal,
-  }[ordem];
-  rows.sort(cmp);
-  $("c-rows").innerHTML = rows.length ? rows.map(r => {
-    const { vagas, sal } = resumo(r.vagas);
-    const cargo = /^v[aá]rios cargos$/i.test(r.cargos) ? "" : `<small>${esc(r.cargos)}</small>`;
-    return `<div class="crow${r._novo ? " is-new" : ""}">` +
-      `<div class="uf"><span class="chip chip-uf">${esc(r.uf === "Nacional" ? "BR" : r.uf)}</span></div>` +
-      `<div class="org"><a href="${esc(r.link)}" target="_blank" rel="noopener" title="${esc(r.vagas)}">${esc(r.orgao)}</a>` +
-      `${r._novo ? '<span class="chip chip-new">novo</span>' : ""}${cargo}</div>` +
-      `<div class="vs"><div class="vagas">${vagas}</div><div class="sal">${sal}</div></div>` +
-      prazo(r) + `</div>`;
-  }).join("") :
-    '<div class="empty"><b>Nenhum concurso com esses filtros</b>Tente outra UF ou desmarque "Só novos".</div>';
+  rows.sort(SORTS[ordem] || SORTS.fim);
+  for (const th of document.querySelectorAll(".ctable th[data-sort]")) {
+    if (th.dataset.sort === ordem) th.setAttribute("aria-sort", SORT_DIR[ordem] || "descending");
+    else th.removeAttribute("aria-sort");
+  }
+  $("c-rows").innerHTML = rows.length ? rows.map(r =>
+    `<tr${r._novo ? ' class="is-new"' : ""}>` +
+      `<td class="org-col"><a href="${esc(r.link)}" target="_blank" rel="noopener">${esc(r.orgao)}</a>` +
+        `${r._novo ? '<span class="chip chip-new">novo</span>' : ""}</td>` +
+      `<td><span class="chip chip-uf">${esc(r.uf)}</span></td>` +
+      `<td class="muted">${esc(r.cargos)}</td>` +
+      `<td>${escolaridade(r.escolaridade)}</td>` +
+      `<td class="num-col">${vagasTexto(r)}</td>` +
+      `<td class="num-col sal">${r._sal ? "R$ " + r._sal.toLocaleString("pt-BR", { minimumFractionDigits: 2 }) : '<span class="muted">–</span>'}</td>` +
+      `<td class="date">${esc(r.inscricoes)}</td>` +
+      `<td>${prazo(r)}</td>` +
+      `<td class="date muted">${parseDate(r.desde).toLocaleDateString("pt-BR")}</td>` +
+    `</tr>`).join("") :
+    '<tr><td colspan="9" class="empty"><b>Nenhum concurso com esses filtros</b>Tente outra UF ou desmarque "Só novos".</td></tr>';
   $("c-count").innerHTML = `<b>${rows.length}</b> de ${C.data.length} concursos abertos`;
   if (currentTab() === "concursos") writeUrl(cKeys);
 }
@@ -485,6 +525,7 @@ fetch("concursos.json", { cache: "no-cache" }).then(r => r.json()).then(j => {
     ...r,
     _fim: parseDate(r.fim),
     _sal: salario(r.vagas),
+    _qtd: Number((r.vagas.match(/^(\d[\d.]*)\s+vagas?/i) || [, "0"])[1].replace(/\./g, "")),
     _novo: r.desde > j.inicio && today - parseDate(r.desde) <= 7 * DAY,
     _s: norm(`${r.orgao} ${r.uf} ${r.cargos} ${r.vagas}`),
   })).filter(r => !r._fim || r._fim >= today);
@@ -504,6 +545,8 @@ fetch("concursos.json", { cache: "no-cache" }).then(r => r.json()).then(j => {
   cApply();
 }).catch(() => { $("c-count").textContent = "Não foi possível carregar os concursos. Recarregue a página."; });
 
+for (const th of document.querySelectorAll(".ctable th[data-sort]"))
+  th.querySelector("button").addEventListener("click", () => { $("c-ordem").value = th.dataset.sort; cApply(); });
 $("st-novos-link").addEventListener("click", () => { $("c-novos").checked = true; setTimeout(cApply); });
 let ct;
 $("c-q").addEventListener("input", () => { clearTimeout(ct); ct = setTimeout(cApply, 150); });
