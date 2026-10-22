@@ -69,5 +69,5 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           gh issue create \
-            --title "Novo concurso de Enfermeiro ($ALERTA_UFS) - $(TZ=America/Sao_Paulo date +%d/%m/%Y)" \
+            --title "Plantão de Editais: novo concurso ($ALERTA_UFS) - $(TZ=America/Sao_Paulo date +%d/%m/%Y)" \
             --body-file alerta.md

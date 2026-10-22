@@ -101,7 +101,7 @@ def escrever_alerta(novos):
               for c in alvo]
     ALERTA.write_text("\n".join(linhas) + f"\n\nVer todos no site: {SITE}\n", encoding="utf-8")
     print(f"Alerta: {len(alvo)} novo(s) em {', '.join(sorted(ufs)) or 'todas as UFs'}.")
-    enviar_telegram(alvo, "🩺 <b>Novo concurso de Enfermeiro</b>")
+    enviar_telegram(alvo, "🚨 <b>Plantão de Editais</b>\nNovo concurso de Enfermeiro na área:")
 
 
 def ufs_alerta():
@@ -145,7 +145,7 @@ def testar_telegram():
     ufs = ufs_alerta()
     todos = json.loads(OUT.read_text(encoding="utf-8"))["concursos"]
     alvo = [c for c in todos if not ufs or c["uf"] in ufs][:3]
-    enviar_telegram(alvo, "✅ <b>Teste do aviso de concursos</b>\nExemplos do seu filtro:")
+    enviar_telegram(alvo, "✅ <b>Plantão de Editais</b>\nTeste do aviso. Exemplos do seu filtro:")
 
 
 if __name__ == "__main__":
