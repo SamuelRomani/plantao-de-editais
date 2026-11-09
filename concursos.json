@@ -1,5 +1,5 @@
 {
- "atualizado": "08/11/2026 07:14",
+ "atualizado": "09/11/2026 03:19",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -135,18 +135,6 @@
    "desde": "2026-11-07"
   },
   {
-   "orgao": "Prefeitura de Tuiuti",
-   "uf": "SP",
-   "vagas": "11 vagas até R$ 5.209,01",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "Prorrogado até 23/11/2026",
-   "fim": "2026-11-23",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-retifica-edital-de-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
-   "desde": "2026-10-27"
-  },
-  {
    "orgao": "Prefeitura de Monteiro Lobato",
    "uf": "SP",
    "vagas": "64 vagas até R$ 7.408,75",
@@ -157,6 +145,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monteiro-lobato-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
    "desde": "2026-10-24"
+  },
+  {
+   "orgao": "Prefeitura de Tuiuti",
+   "uf": "SP",
+   "vagas": "11 vagas até R$ 5.209,01",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "Prorrogado até 23/11/2026",
+   "fim": "2026-11-23",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tuiuti-sp-retifica-edital-de-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
+   "desde": "2026-10-27"
   },
   {
    "orgao": "Prefeitura de Cunha",
@@ -176,7 +176,7 @@
    "vagas": "19 vagas até R$ 4.934,38",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "09 a 18/11/2026",
+   "inscricoes": "18/11/2026",
    "fim": "2026-11-18",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-para-diversas-areas-em-bauru",
@@ -255,18 +255,6 @@
    "desde": "2026-10-22"
   },
   {
-   "orgao": "Prefeitura de Macedônia",
-   "uf": "SP",
-   "vagas": "1 vaga até R$ 8.189,58",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "08/11/2026",
-   "fim": "2026-11-08",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macedonia-sp-abre-concurso-publico-com-salarios-de-ate-8189",
-   "desde": "2026-10-22"
-  },
-  {
    "orgao": "RioSaúde - Empresa Pública de Saúde do Rio de Janeiro S/A",
    "uf": "RJ",
    "vagas": "15 vagas até R$ 5.239,40",
@@ -276,30 +264,6 @@
    "fim": "2026-11-15",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/riosaude-rj-abre-processo-seletivo-para-enfermeiros",
-   "desde": "2026-11-07"
-  },
-  {
-   "orgao": "RioSaúde - Empresa Pública de Saúde do Rio de Janeiro S/A",
-   "uf": "RJ",
-   "vagas": "3 vagas até R$ 6.969,53",
-   "cargos": "Enfermeiro, Terapeuta Ocupacional",
-   "escolaridade": "Superior",
-   "inscricoes": "08/11/2026",
-   "fim": "2026-11-08",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/riosaude-rj-abre-processo-seletivo-para-os-cargos-de-enfermeiro-e-terapeuta-ocupacional",
-   "desde": "2026-10-29"
-  },
-  {
-   "orgao": "Prefeitura de Iguaba Grande",
-   "uf": "RJ",
-   "vagas": "Vagas até R$ 6.596,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "08/11/2026",
-   "fim": "2026-11-08",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iguaba-grande-rj-abre-processo-seletivo-com-salarios-de-ate-6596",
    "desde": "2026-11-07"
   },
   {
@@ -507,18 +471,6 @@
    "desde": "2026-10-22"
   },
   {
-   "orgao": "Prefeitura de Confins",
-   "uf": "MG",
-   "vagas": "153 vagas até R$ 23.298,67",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "Prorrogado até 12/11/2026",
-   "fim": "2026-11-12",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-confins-mg-divulga-retificacoes-de-processo-seletivo",
-   "desde": "2026-11-06"
-  },
-  {
    "orgao": "Prefeitura de Baldim",
    "uf": "MG",
    "vagas": "10 vagas até R$ 5.037,73",
@@ -543,16 +495,16 @@
    "desde": "2026-10-22"
   },
   {
-   "orgao": "Prefeitura de Onça de Pitangui",
+   "orgao": "Prefeitura de Confins",
    "uf": "MG",
-   "vagas": "11 vagas até R$ 14.829,31",
+   "vagas": "153 vagas até R$ 23.298,67",
    "cargos": "Vários Cargos",
-   "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "10/11/2026",
-   "fim": "2026-11-10",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "Prorrogado até 12/11/2026",
+   "fim": "2026-11-12",
    "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-onca-de-pitangui-mg-abre-processo-seletivo-com-salarios-de-ate-14829",
-   "desde": "2026-10-23"
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-confins-mg-divulga-retificacoes-de-processo-seletivo",
+   "desde": "2026-11-06"
   },
   {
    "orgao": "Prefeitura de Santana de Pirapama",
@@ -565,6 +517,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santana-de-pirapama-mg-abre-concurso-com-salarios-de-ate-6221",
    "desde": "2026-10-22"
+  },
+  {
+   "orgao": "Prefeitura de Onça de Pitangui",
+   "uf": "MG",
+   "vagas": "11 vagas até R$ 14.829,31",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "10/11/2026",
+   "fim": "2026-11-10",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-onca-de-pitangui-mg-abre-processo-seletivo-com-salarios-de-ate-14829",
+   "desde": "2026-10-23"
   },
   {
    "orgao": "Prefeitura de Anchieta",
@@ -627,18 +591,6 @@
    "desde": "2026-10-22"
   },
   {
-   "orgao": "Prefeitura de Mariluz",
-   "uf": "PR",
-   "vagas": "13 vagas até R$ 5.358,58",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "22/11/2026",
-   "fim": "2026-11-22",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-mariluz-pr-abre-concurso-publico-com-salarios-de-ate-5358",
-   "desde": "2026-10-31"
-  },
-  {
    "orgao": "Prefeitura de Guamiranga",
    "uf": "PR",
    "vagas": "18 vagas até R$ 5.130,63",
@@ -649,6 +601,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guamiranga-pr-abre-dois-novos-concursos-publicos-para-diversas-areas",
    "desde": "2026-10-24"
+  },
+  {
+   "orgao": "Prefeitura de Mariluz",
+   "uf": "PR",
+   "vagas": "13 vagas até R$ 5.358,58",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "22/11/2026",
+   "fim": "2026-11-22",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-mariluz-pr-abre-concurso-publico-com-salarios-de-ate-5358",
+   "desde": "2026-10-31"
   },
   {
    "orgao": "Prefeitura de Florestópolis",
@@ -807,18 +771,6 @@
    "desde": "2026-11-04"
   },
   {
-   "orgao": "Prefeitura de Fraiburgo",
-   "uf": "SC",
-   "vagas": "Cadastro de reserva até R$ 25.103,42",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "02/12/2026",
-   "fim": "2026-12-02",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-fraiburgo-sc-abre-processo-seletivo-para-cadastro-de-reserva",
-   "desde": "2026-11-04"
-  },
-  {
    "orgao": "Prefeitura de Guarujá do Sul",
    "uf": "SC",
    "vagas": "5 vagas até R$ 30.761,75",
@@ -828,6 +780,18 @@
    "fim": "2026-12-02",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaruja-do-sul-sc-abre-concurso-e-selecoes-com-salarios-de-ate-30-7-mil",
+   "desde": "2026-11-04"
+  },
+  {
+   "orgao": "Prefeitura de Fraiburgo",
+   "uf": "SC",
+   "vagas": "Cadastro de reserva até R$ 25.103,42",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "02/12/2026",
+   "fim": "2026-12-02",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-fraiburgo-sc-abre-processo-seletivo-para-cadastro-de-reserva",
    "desde": "2026-11-04"
   },
   {
@@ -843,18 +807,6 @@
    "desde": "2026-10-31"
   },
   {
-   "orgao": "Prefeitura e Fundação Cultural de Navegantes",
-   "uf": "SC",
-   "vagas": "Cadastro de Reserva até R$ 19.199,16",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "25/11/2026",
-   "fim": "2026-11-25",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-e-fundacao-cultural-de-navegantes-sc-abrem-selecoes-com-salarios-de-ate-19199",
-   "desde": "2026-10-24"
-  },
-  {
    "orgao": "Prefeitura de Santa Terezinha do Progresso",
    "uf": "SC",
    "vagas": "8 vagas até R$ 10.000,00",
@@ -864,6 +816,18 @@
    "fim": "2026-11-25",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-com-salarios-de-ate-10000",
+   "desde": "2026-10-24"
+  },
+  {
+   "orgao": "Prefeitura e Fundação Cultural de Navegantes",
+   "uf": "SC",
+   "vagas": "Cadastro de Reserva até R$ 19.199,16",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "25/11/2026",
+   "fim": "2026-11-25",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-e-fundacao-cultural-de-navegantes-sc-abrem-selecoes-com-salarios-de-ate-19199",
    "desde": "2026-10-24"
   },
   {
@@ -903,18 +867,6 @@
    "desde": "2026-10-29"
   },
   {
-   "orgao": "Prefeitura de Lages - Secretaria da Saúde",
-   "uf": "SC",
-   "vagas": "14 vagas até R$ 5.883,29",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "16/11/2026",
-   "fim": "2026-11-16",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lages-sc-abre-selecao-para-diversos-cargos-na-secretaria-da-saude",
-   "desde": "2026-10-22"
-  },
-  {
    "orgao": "Prefeitura de Iporã do Oeste",
    "uf": "SC",
    "vagas": "5 vagas até R$ 19.265,80",
@@ -927,6 +879,18 @@
    "desde": "2026-10-22"
   },
   {
+   "orgao": "Prefeitura de Lages - Secretaria da Saúde",
+   "uf": "SC",
+   "vagas": "14 vagas até R$ 5.883,29",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "16/11/2026",
+   "fim": "2026-11-16",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lages-sc-abre-selecao-para-diversos-cargos-na-secretaria-da-saude",
+   "desde": "2026-10-22"
+  },
+  {
    "orgao": "Prefeitura de Ilhota",
    "uf": "SC",
    "vagas": "36 vagas até R$ 21.113,16",
@@ -936,30 +900,6 @@
    "fim": "2026-11-14",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ilhota-sc-publica-edital-de-concurso-publico-com-salarios-de-ate-21113",
-   "desde": "2026-10-22"
-  },
-  {
-   "orgao": "Prefeitura de São João Batista",
-   "uf": "SC",
-   "vagas": "Vagas até R$ 6.897,09",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "08/11/2026",
-   "fim": "2026-11-08",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/municipio-de-sao-joao-batista-sc-abre-processos-seletivos-para-diversos-cargos",
-   "desde": "2026-10-22"
-  },
-  {
-   "orgao": "Prefeitura de Urussanga",
-   "uf": "SC",
-   "vagas": "20 vagas até R$ 23.930,19",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "08/11/2026",
-   "fim": "2026-11-08",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-urussanga-sc-abre-processo-seletivo-com-salarios-de-ate-23930",
    "desde": "2026-10-22"
   },
   {
@@ -992,7 +932,7 @@
    "vagas": "21 vagas até R$ 4.428,13",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "09 a 30/11/2026",
+   "inscricoes": "30/11/2026",
    "fim": "2026-11-30",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-uirapuru-go-abre-concurso-publico-com-salarios-de-ate-4428",
@@ -1004,7 +944,7 @@
    "vagas": "Cadastro de reserva até R$ 4.431,40",
    "cargos": "Vários Cargos",
    "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "09 a 13/11/2026",
+   "inscricoes": "13/11/2026",
    "fim": "2026-11-13",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/instituto-socrates-guanaes-go-abre-processo-seletivo-para-cadastro-de-reserva",
@@ -1047,6 +987,18 @@
    "desde": "2026-10-30"
   },
   {
+   "orgao": "Prefeitura de Pontes e Lacerda",
+   "uf": "MT",
+   "vagas": "47 vagas até R$ 11.308,36",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "22/11/2026",
+   "fim": "2026-11-22",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontes-e-lacerda-mt-abre-processo-seletivo-com-salarios-de-ate-11308",
+   "desde": "2026-10-27"
+  },
+  {
    "orgao": "Prefeitura de Santa Rita do Trivelato",
    "uf": "MT",
    "vagas": "Vagas até R$ 21.825,31",
@@ -1057,18 +1009,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-rita-do-trivelato-mt-abre-selecao-com-salarios-de-ate-21825",
    "desde": "2026-10-31"
-  },
-  {
-   "orgao": "Prefeitura de Pontes e Lacerda",
-   "uf": "MT",
-   "vagas": "47 vagas até R$ 11.308,36",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "09 a 22/11/2026",
-   "fim": "2026-11-22",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pontes-e-lacerda-mt-abre-processo-seletivo-com-salarios-de-ate-11308",
-   "desde": "2026-10-27"
   },
   {
    "orgao": "Prefeitura de Mirassol d'Oeste",
@@ -1107,18 +1047,6 @@
    "desde": "2026-10-30"
   },
   {
-   "orgao": "Prefeitura de Santa Luzia d'Oeste",
-   "uf": "RO",
-   "vagas": "34 vagas até R$ 5.130,63",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "11/11/2026",
-   "fim": "2026-11-11",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-luzia-doeste-ro-abre-selecao-com-salarios-de-ate-5130",
-   "desde": "2026-10-28"
-  },
-  {
    "orgao": "Prefeitura de Porto Velho",
    "uf": "RO",
    "vagas": "2098 vagas até R$ 9.828,19",
@@ -1129,6 +1057,18 @@
    "destaque": true,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-velho-ro-retifica-concurso-com-vagas-imediatas-e-cadastro-de-reserva",
    "desde": "2026-10-22"
+  },
+  {
+   "orgao": "Prefeitura de Santa Luzia d'Oeste",
+   "uf": "RO",
+   "vagas": "34 vagas até R$ 5.130,63",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "11/11/2026",
+   "fim": "2026-11-11",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-luzia-doeste-ro-abre-selecao-com-salarios-de-ate-5130",
+   "desde": "2026-10-28"
   },
   {
    "orgao": "Prefeitura de Luís Eduardo Magalhães",
@@ -1263,18 +1203,6 @@
    "desde": "2026-10-22"
   },
   {
-   "orgao": "Prefeitura de Conceição",
-   "uf": "PB",
-   "vagas": "129 vagas até R$ 7.000,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "Reaberto até 08/11/2026",
-   "fim": "2026-11-08",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-conceicao-pb-reabre-inscricoes-para-concurso-publico",
-   "desde": "2026-10-22"
-  },
-  {
    "orgao": "Prefeitura de Moreilândia",
    "uf": "PE",
    "vagas": "381 vagas até R$ 10.000,00",
@@ -1311,18 +1239,6 @@
    "desde": "2026-11-06"
   },
   {
-   "orgao": "Prefeitura de Belém do Piauí",
-   "uf": "PI",
-   "vagas": "49 vagas até R$ 12.000,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "25/11/2026",
-   "fim": "2026-11-25",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-belem-do-piaui-pi-abre-concurso-com-remuneracoes-de-ate-12000",
-   "desde": "2026-10-29"
-  },
-  {
    "orgao": "Prefeitura de Campo Grande do Piauí",
    "uf": "PI",
    "vagas": "90 vagas até R$ 8.257,00",
@@ -1335,16 +1251,16 @@
    "desde": "2026-10-28"
   },
   {
-   "orgao": "Prefeitura de Cristalândia do Piauí",
+   "orgao": "Prefeitura de Belém do Piauí",
    "uf": "PI",
-   "vagas": "50 vagas até R$ 4.750,00",
+   "vagas": "49 vagas até R$ 12.000,00",
    "cargos": "Vários Cargos",
-   "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "23/11/2026",
-   "fim": "2026-11-23",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "25/11/2026",
+   "fim": "2026-11-25",
    "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cristalandia-do-piaui-pi-abre-concurso-publico-para-diversos-cargos",
-   "desde": "2026-10-22"
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-belem-do-piaui-pi-abre-concurso-com-remuneracoes-de-ate-12000",
+   "desde": "2026-10-29"
   },
   {
    "orgao": "Prefeitura de Monsenhor Gil",
@@ -1356,6 +1272,18 @@
    "fim": "2026-11-23",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monsenhor-gil-pi-abre-concurso-publico-com-salarios-de-ate-8000",
+   "desde": "2026-10-22"
+  },
+  {
+   "orgao": "Prefeitura de Cristalândia do Piauí",
+   "uf": "PI",
+   "vagas": "50 vagas até R$ 4.750,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "23/11/2026",
+   "fim": "2026-11-23",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cristalandia-do-piaui-pi-abre-concurso-publico-para-diversos-cargos",
    "desde": "2026-10-22"
   },
   {
