@@ -1,5 +1,5 @@
 {
- "atualizado": "10/11/2026 11:49",
+ "atualizado": "10/11/2026 18:17",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -663,6 +663,18 @@
    "desde": "2026-10-22"
   },
   {
+   "orgao": "Prefeitura de Antônio Prado",
+   "uf": "RS",
+   "vagas": "21 vagas até R$ 10.352,30",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Superior",
+   "inscricoes": "09/12/2026",
+   "fim": "2026-12-09",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-antonio-prado-rs-abre-concurso-publico-com-salarios-de-ate-10352",
+   "desde": "2026-11-10"
+  },
+  {
    "orgao": "GHC - Grupo Hospitalar Conceição",
    "uf": "RS",
    "vagas": "Cadastro de reserva até R$ 12.974,40",
@@ -1225,6 +1237,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ribeiraozinho-do-maranhao-ma-publica-editais-de-concurso-e-processo-seletivo",
    "desde": "2026-10-22"
+  },
+  {
+   "orgao": "Prefeitura de Baía da Traição",
+   "uf": "PB",
+   "vagas": "117 vagas até R$ 10.000,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "17/11 a 16/12/2026",
+   "fim": "2026-12-16",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-baia-da-traicao-pb-abre-concurso-publico-com-vagas-em-diversos-cargos",
+   "desde": "2026-11-10"
   },
   {
    "orgao": "Prefeitura de Parari",
