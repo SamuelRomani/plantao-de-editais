@@ -1,5 +1,5 @@
 {
- "atualizado": "09/11/2026 03:19",
+ "atualizado": "10/11/2026 00:33",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -92,7 +92,7 @@
    "vagas": "12 vagas até R$ 3.077,29",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "10/11 a 04/12/2026",
+   "inscricoes": "04/12/2026",
    "fim": "2026-12-04",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-canitar-sp-abre-concurso-publico-para-diversos-cargos",
@@ -241,18 +241,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaicara-sp-abre-concurso-publico-com-salarios-de-ate-17716",
    "desde": "2026-10-24"
-  },
-  {
-   "orgao": "Prefeitura de Piedade",
-   "uf": "SP",
-   "vagas": "20 vagas até R$ 17.397,46",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Superior",
-   "inscricoes": "09/11/2026",
-   "fim": "2026-11-09",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-piedade-sp-publica-edital-de-concurso-publico-com-salarios-de-ate-17397",
-   "desde": "2026-10-22"
   },
   {
    "orgao": "RioSaúde - Empresa Pública de Saúde do Rio de Janeiro S/A",
@@ -440,7 +428,7 @@
    "vagas": "9 vagas até R$ 4.462,11",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "10 a 20/11/2026",
+   "inscricoes": "20/11/2026",
    "fim": "2026-11-20",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-leopoldina-mg-abre-selecao-com-salarios-de-ate-4462",
@@ -625,18 +613,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-florestopolis-pr-abre-concurso-publico-com-salarios-de-ate-15389",
    "desde": "2026-10-22"
-  },
-  {
-   "orgao": "Prefeitura de Francisco Beltrão",
-   "uf": "PR",
-   "vagas": "Cadastro de reserva até R$ 6.749,53",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "09/11/2026",
-   "fim": "2026-11-09",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-francisco-beltrao-pr-abre-processo-seletivo-para-diversos-cargos",
-   "desde": "2026-10-23"
   },
   {
    "orgao": "GHC - Grupo Hospitalar Conceição",
@@ -1095,18 +1071,6 @@
    "desde": "2026-10-22"
   },
   {
-   "orgao": "Prefeitura de Firmino Alves",
-   "uf": "BA",
-   "vagas": "210 vagas até R$ 4.867,77",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "09/11/2026",
-   "fim": "2026-11-09",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-firmino-alves-ba-abre-concurso-publico-com-salarios-de-ate-4867",
-   "desde": "2026-10-22"
-  },
-  {
    "orgao": "Prefeitura de Boa Viagem",
    "uf": "CE",
    "vagas": "1001 vagas até R$ 14.718,92",
@@ -1309,18 +1273,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-murici-dos-portelas-pi-abre-vagas-para-tecnicos-e-enfermeiros-socorristas",
    "desde": "2026-10-29"
-  },
-  {
-   "orgao": "Prefeitura de São João do Piauí",
-   "uf": "PI",
-   "vagas": "590 vagas até R$ 16.800,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "09/11/2026",
-   "fim": "2026-11-09",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-joao-do-piaui-pi-abre-processos-seletivos-com-salarios-de-ate-16800",
-   "desde": "2026-10-22"
   }
  ]
 }
