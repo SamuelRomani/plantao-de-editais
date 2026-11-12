@@ -1,19 +1,7 @@
 {
- "atualizado": "11/11/2026 03:08",
+ "atualizado": "12/11/2026 04:05",
  "inicio": "2026-10-22",
  "concursos": [
-  {
-   "orgao": "INB - Indústrias Nucleares do Brasil S.A.",
-   "uf": "Nacional",
-   "vagas": "Cadastro de reserva até R$ 8.374,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "11/11/2026",
-   "fim": "2026-11-11",
-   "destaque": true,
-   "link": "https://www.pciconcursos.com.br/noticias/inb-retifica-concurso-publico-para-cadastro-de-reserva-em-diversas-areas-de-atuacao",
-   "desde": "2026-11-07"
-  },
   {
    "orgao": "HFASP - Hospital de Força Aérea de São Paulo",
    "uf": "SP",
@@ -49,6 +37,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
    "desde": "2026-11-05"
+  },
+  {
+   "orgao": "Prefeitura de Tapiraí",
+   "uf": "SP",
+   "vagas": "24 vagas até R$ 7.991,27",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "14/12/2026",
+   "fim": "2026-12-14",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tapirai-sp-abre-concurso-publico-com-salarios-de-ate-7991",
+   "desde": "2026-11-12"
   },
   {
    "orgao": "Prefeitura de Birigui",
@@ -94,7 +94,7 @@
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
    "inscricoes": "30/11/2026",
    "fim": "2026-11-30",
-   "destaque": false,
+   "destaque": true,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-leme-sp-abre-concurso-publico-com-salarios-de-ate-13359",
    "desde": "2026-10-30"
   },
@@ -217,18 +217,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-embauba-sp-retifica-concurso-publico-com-salarios-de-ate-5600",
    "desde": "2026-11-10"
-  },
-  {
-   "orgao": "Prefeitura de Guaiçara",
-   "uf": "SP",
-   "vagas": "33 vagas até R$ 17.716,50",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "11/11/2026",
-   "fim": "2026-11-11",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaicara-sp-abre-concurso-publico-com-salarios-de-ate-17716",
-   "desde": "2026-10-24"
   },
   {
    "orgao": "RioSaúde - Empresa Pública de Saúde do Rio de Janeiro S/A",
@@ -459,6 +447,18 @@
    "desde": "2026-10-22"
   },
   {
+   "orgao": "Prefeitura de Dom Silvério",
+   "uf": "MG",
+   "vagas": "6 vagas até R$ 4.824,42",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "18/11/2026",
+   "fim": "2026-11-18",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-dom-silverio-mg-abre-processo-seletivo-com-salarios-de-ate-4824",
+   "desde": "2026-11-12"
+  },
+  {
    "orgao": "Prefeitura de Piracema",
    "uf": "MG",
    "vagas": "132 vagas até R$ 18.647,01",
@@ -562,7 +562,7 @@
    "escolaridade": "Médio / Técnico / Superior",
    "inscricoes": "25/11/2026",
    "fim": "2026-11-25",
-   "destaque": false,
+   "destaque": true,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quedas-do-iguacu-pr-retifica-edital-de-concurso-publico",
    "desde": "2026-11-11"
   },
@@ -685,18 +685,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapuca-rs-retifica-concurso-publico-com-salarios-de-ate-9495",
    "desde": "2026-11-04"
-  },
-  {
-   "orgao": "Prefeitura de Mostardas",
-   "uf": "RS",
-   "vagas": "Cadastro de reserva até R$ 7.034,16",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "11/11/2026",
-   "fim": "2026-11-11",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-mostardas-rs-abre-processo-seletivo-para-diversos-cargos",
-   "desde": "2026-10-28"
   },
   {
    "orgao": "Prefeitura do Município de Rio Rufino",
@@ -838,7 +826,7 @@
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
    "inscricoes": "16/11/2026",
    "fim": "2026-11-16",
-   "destaque": false,
+   "destaque": true,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lages-sc-abre-selecao-para-diversos-cargos-na-secretaria-da-saude",
    "desde": "2026-10-22"
   },
@@ -865,6 +853,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ilhota-sc-publica-edital-de-concurso-publico-com-salarios-de-ate-21113",
    "desde": "2026-10-22"
+  },
+  {
+   "orgao": "FAHECE",
+   "uf": "SC",
+   "vagas": "1 vaga até R$ 5.001,11",
+   "cargos": "Enfermeiro I",
+   "escolaridade": "Superior",
+   "inscricoes": "12/11/2026",
+   "fim": "2026-11-12",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/fahece-sc-anuncia-processo-seletivo-para-o-cargo-de-enfermeiro-i-em-florianopolis",
+   "desde": "2026-11-12"
   },
   {
    "orgao": "IGESDF - Instituto de Gestão Estratégica de Saúde do Distrito Federal",
@@ -951,12 +951,24 @@
    "desde": "2026-10-24"
   },
   {
+   "orgao": "Prefeitura de Nova Bandeirantes",
+   "uf": "MT",
+   "vagas": "189 vagas até R$ 4.928,75",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "25/11 a 03/12/2026",
+   "fim": "2026-12-03",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-bandeirantes-mt-abre-selecao-com-salarios-de-ate-4928",
+   "desde": "2026-11-12"
+  },
+  {
    "orgao": "Prefeitura de Brasnorte",
    "uf": "MT",
    "vagas": "Cadastro de reserva até R$ 6.697,17",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "12 a 26/11/2026",
+   "inscricoes": "26/11/2026",
    "fim": "2026-11-26",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-brasnorte-mt-abre-processo-seletivo-para-cadastro-de-reserva",
@@ -1035,30 +1047,6 @@
    "desde": "2026-10-30"
   },
   {
-   "orgao": "Prefeitura de Santa Luzia d'Oeste",
-   "uf": "RO",
-   "vagas": "34 vagas até R$ 5.130,63",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "11/11/2026",
-   "fim": "2026-11-11",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-luzia-doeste-ro-abre-selecao-com-salarios-de-ate-5130",
-   "desde": "2026-10-28"
-  },
-  {
-   "orgao": "Prefeitura de Porto Velho",
-   "uf": "RO",
-   "vagas": "2098 vagas até R$ 9.828,19",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "11/11/2026",
-   "fim": "2026-11-11",
-   "destaque": true,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-porto-velho-ro-retifica-concurso-com-vagas-imediatas-e-cadastro-de-reserva",
-   "desde": "2026-10-22"
-  },
-  {
    "orgao": "Prefeitura de Itiúba",
    "uf": "BA",
    "vagas": "65 vagas até R$ 4.318,18",
@@ -1069,6 +1057,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itiuba-ba-abre-processo-seletivo-para-profissionais-de-saude",
    "desde": "2026-11-10"
+  },
+  {
+   "orgao": "Prefeitura de Firmino Alves",
+   "uf": "BA",
+   "vagas": "210 vagas até R$ 4.867,77",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "Prorrogado até 16/11/2026",
+   "fim": "2026-11-16",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-firmino-alves-ba-retifica-concurso-publico-com-salarios-de-ate-4867",
+   "desde": "2026-11-12"
   },
   {
    "orgao": "Prefeitura de Luís Eduardo Magalhães",
@@ -1131,18 +1131,6 @@
    "desde": "2026-10-24"
   },
   {
-   "orgao": "Prefeitura de Jaguaribe",
-   "uf": "CE",
-   "vagas": "183 vagas até R$ 12.948,01",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "Reaberto até 11/11/2026",
-   "fim": "2026-11-11",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jaguaribe-ce-reabre-inscricoes-para-concursos-publicos",
-   "desde": "2026-10-24"
-  },
-  {
    "orgao": "Prefeitura de Ribeirãozinho do Maranhão",
    "uf": "MA",
    "vagas": "211 vagas até R$ 6.500,00",
@@ -1165,6 +1153,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-baia-da-traicao-pb-abre-concurso-publico-com-vagas-em-diversos-cargos",
    "desde": "2026-11-10"
+  },
+  {
+   "orgao": "Prefeitura de Natuba",
+   "uf": "PB",
+   "vagas": "141 vagas até R$ 3.988,96",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Superior",
+   "inscricoes": "13/12/2026",
+   "fim": "2026-12-13",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-natuba-pb-abre-concurso-publico-para-diversos-cargos",
+   "desde": "2026-11-12"
   },
   {
    "orgao": "Prefeitura de Parari",
