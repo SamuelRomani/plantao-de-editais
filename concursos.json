@@ -1,5 +1,5 @@
 {
- "atualizado": "15/11/2026 07:47",
+ "atualizado": "16/11/2026 08:08",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -20,7 +20,7 @@
    "vagas": "1072 vagas até R$ 12.213,03",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "16/11/2026 a 04/01/2027",
+   "inscricoes": "04/01/2027",
    "fim": "2027-01-04",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-tres-concursos-publicos-para-diversos-cargos",
@@ -32,7 +32,7 @@
    "vagas": "Vagas até R$ 14.980,00",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "16/11 a 16/12/2026",
+   "inscricoes": "16/12/2026",
    "fim": "2026-12-16",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-inubia-paulista-sp-abre-concurso-publico-e-processo-seletivo-para-diversos-cargos",
@@ -44,7 +44,7 @@
    "vagas": "107 vagas até R$ 18.540,71",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "16/11 a 15/12/2026",
+   "inscricoes": "15/12/2026",
    "fim": "2026-12-15",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
@@ -207,40 +207,16 @@
    "desde": "2026-10-31"
   },
   {
-   "orgao": "Prefeitura de Lençóis Paulista",
-   "uf": "SP",
-   "vagas": "14 vagas até R$ 5.044,35",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Superior",
-   "inscricoes": "15/11/2026",
-   "fim": "2026-11-15",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-lencois-paulista-sp-abre-concurso-publico-com-salarios-de-ate-5044",
-   "desde": "2026-10-22"
-  },
-  {
    "orgao": "Prefeitura de Italva",
    "uf": "RJ",
    "vagas": "137 vagas até R$ 12.132,37",
    "cargos": "Vários Cargos",
    "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "16/11 a 16/12/2026",
+   "inscricoes": "16/12/2026",
    "fim": "2026-12-16",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-italva-rj-abre-concurso-publico-com-salarios-de-ate-12132",
    "desde": "2026-11-14"
-  },
-  {
-   "orgao": "RioSaúde - Empresa Pública de Saúde do Rio de Janeiro S/A",
-   "uf": "RJ",
-   "vagas": "15 vagas até R$ 5.239,40",
-   "cargos": "Enfermeiro",
-   "escolaridade": "Superior",
-   "inscricoes": "15/11/2026",
-   "fim": "2026-11-15",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/riosaude-rj-abre-processo-seletivo-para-enfermeiros",
-   "desde": "2026-11-07"
   },
   {
    "orgao": "Prefeitura de Água Boa",
@@ -368,7 +344,7 @@
    "vagas": "172 vagas até R$ 17.954,23",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "16/11 a 15/12/2026",
+   "inscricoes": "15/12/2026",
    "fim": "2026-12-15",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-alvinopolis-mg-publica-retificacoes-de-concurso-publico-com-salarios-de-ate-17954",
@@ -512,7 +488,7 @@
    "vagas": "13 vagas até R$ 7.997,72",
    "cargos": "Vários Cargos",
    "escolaridade": "Superior",
-   "inscricoes": "16 a 30/11/2026",
+   "inscricoes": "30/11/2026",
    "fim": "2026-11-30",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/unespar-pr-abre-processo-seletivo-para-agente-universitario-profissional",
@@ -656,7 +632,7 @@
    "vagas": "14 vagas até R$ 13.096,78",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Superior",
-   "inscricoes": "16/11 a 16/12/2026",
+   "inscricoes": "16/12/2026",
    "fim": "2026-12-16",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-curitibanos-sc-abre-concurso-publico-com-salarios-de-ate-13096",
@@ -980,7 +956,7 @@
    "vagas": "66 vagas até R$ 6.562,12",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "16 a 30/11/2026",
+   "inscricoes": "30/11/2026",
    "fim": "2026-11-30",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-ubirata-mt-abre-selecao-com-vagas-e-cadastro-de-reserva-em-diversos-cargos",
@@ -1071,18 +1047,6 @@
    "desde": "2026-11-13"
   },
   {
-   "orgao": "Semusa - Secretaria de Saúde de Rolim de Moura",
-   "uf": "RO",
-   "vagas": "36 vagas até R$ 3.477,96",
-   "cargos": "Técnico de Enfermagem, Enfermeiro, Fisioterapeuta",
-   "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "15/11/2026",
-   "fim": "2026-11-15",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-rolim-de-moura-ro-abre-selecao-para-a-secretaria-de-saude",
-   "desde": "2026-11-14"
-  },
-  {
    "orgao": "Prefeitura de Itiúba",
    "uf": "BA",
    "vagas": "65 vagas até R$ 4.318,18",
@@ -1107,18 +1071,6 @@
    "desde": "2026-11-12"
   },
   {
-   "orgao": "Prefeitura de Luís Eduardo Magalhães",
-   "uf": "BA",
-   "vagas": "2355 vagas até R$ 9.216,90",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "15/11/2026",
-   "fim": "2026-11-15",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luis-eduardo-magalhaes-ba-abre-processo-seletivo-para-diversos-cargos",
-   "desde": "2026-11-04"
-  },
-  {
    "orgao": "Prefeitura de Boa Viagem",
    "uf": "CE",
    "vagas": "1001 vagas até R$ 14.718,92",
@@ -1141,18 +1093,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-quixada-ce-abre-processo-seletivo-com-vagas-imediatas-e-cadastro-de-reserva",
    "desde": "2026-10-27"
-  },
-  {
-   "orgao": "Prefeitura de Groaíras",
-   "uf": "CE",
-   "vagas": "72 vagas até R$ 11.000,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "Reaberto até 15/11/2026",
-   "fim": "2026-11-15",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-groairas-ce-reabre-inscricoes-para-concursos-publicos",
-   "desde": "2026-10-24"
   },
   {
    "orgao": "Prefeitura de Ribeirãozinho do Maranhão",
