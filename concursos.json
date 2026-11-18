@@ -1,5 +1,5 @@
 {
- "atualizado": "17/11/2026 04:50",
+ "atualizado": "18/11/2026 08:35",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -27,6 +27,18 @@
    "desde": "2026-11-07"
   },
   {
+   "orgao": "Prefeitura de Pilar do Sul",
+   "uf": "SP",
+   "vagas": "5 vagas até R$ 6.593,75",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Superior",
+   "inscricoes": "26/11 a 28/12/2026",
+   "fim": "2026-12-28",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pilar-do-sul-sp-abre-concurso-publico-com-salarios-de-ate-6593",
+   "desde": "2026-11-18"
+  },
+  {
    "orgao": "Prefeitura de Inúbia Paulista",
    "uf": "SP",
    "vagas": "Vagas até R$ 14.980,00",
@@ -46,7 +58,7 @@
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
    "inscricoes": "15/12/2026",
    "fim": "2026-12-15",
-   "destaque": false,
+   "destaque": true,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-guaratingueta-sp-abre-concurso-publico-com-salarios-de-ate-18540",
    "desde": "2026-11-05"
   },
@@ -193,18 +205,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-para-diversas-areas-em-bauru",
    "desde": "2026-11-06"
-  },
-  {
-   "orgao": "Prefeitura de Iaras",
-   "uf": "SP",
-   "vagas": "19 vagas até R$ 6.142,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "17/11/2026",
-   "fim": "2026-11-17",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-iaras-sp-abre-concurso-publico-e-processo-seletivo",
-   "desde": "2026-11-05"
   },
   {
    "orgao": "Prefeitura de Italva",
@@ -375,6 +375,18 @@
    "desde": "2026-11-06"
   },
   {
+   "orgao": "SEMSA - Secretaria Municipal de Saúde de Nova Lima",
+   "uf": "MG",
+   "vagas": "24 vagas até R$ 8.106,76",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "26/11 a 02/12/2026",
+   "fim": "2026-12-02",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-lima-mg-abre-processo-seletivo-com-salarios-de-ate-8106",
+   "desde": "2026-11-18"
+  },
+  {
    "orgao": "Prefeitura de Antônio Prado de Minas",
    "uf": "MG",
    "vagas": "33 vagas até R$ 3.576,46",
@@ -397,6 +409,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-araujos-mg-abre-processos-seletivos-com-salarios-de-ate-13865",
    "desde": "2026-11-10"
+  },
+  {
+   "orgao": "Fhemig - Fundação Hospitalar do Estado de Minas Gerais",
+   "uf": "MG",
+   "vagas": "1 vaga até R$ 4.204,52",
+   "cargos": "Enfermeiro",
+   "escolaridade": "Superior",
+   "inscricoes": "19 a 26/11/2026",
+   "fim": "2026-11-26",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/fhemig-mg-abre-processo-seletivo-para-enfermeiro-em-belo-horizonte",
+   "desde": "2026-11-18"
   },
   {
    "orgao": "FAEPU - Fundação de Assistência, Estudo e Pesquisa de Uberlândia",
@@ -476,7 +500,7 @@
    "vagas": "25 vagas até R$ 14.000,00",
    "cargos": "Vários Cargos",
    "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "18/11 a 14/12/2026",
+   "inscricoes": "14/12/2026",
    "fim": "2026-12-14",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-anchieta-es-abre-concurso-publico-com-salarios-de-ate-14000",
@@ -493,6 +517,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-muqui-es-abre-concurso-publico-com-diversas-vagas",
    "desde": "2026-11-14"
+  },
+  {
+   "orgao": "Prefeitura de Itambaracá",
+   "uf": "PR",
+   "vagas": "6 vagas até R$ 6.800,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Superior",
+   "inscricoes": "25/11 a 04/12/2026",
+   "fim": "2026-12-04",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itambaraca-pr-abre-selecao-com-salarios-de-ate-6800",
+   "desde": "2026-11-18"
   },
   {
    "orgao": "Unespar - Universidade Estadual do Paraná",
@@ -613,6 +649,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/grupo-hospitalar-conceicao-rs-abre-concurso-para-cadastro-de-reserva-em-diversas-areas",
    "desde": "2026-11-06"
+  },
+  {
+   "orgao": "Prefeitura de Presidente Lucena",
+   "uf": "RS",
+   "vagas": "1 vaga até R$ 6.710,73",
+   "cargos": "Enfermeiro",
+   "escolaridade": "Superior",
+   "inscricoes": "23 a 27/11/2026",
+   "fim": "2026-11-27",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-presidente-lucena-rs-abre-processo-seletivo-para-o-cargo-de-enfermeiro",
+   "desde": "2026-11-18"
   },
   {
    "orgao": "Prefeitura de Piratini",
@@ -855,6 +903,18 @@
    "desde": "2026-10-23"
   },
   {
+   "orgao": "CEPON - Centro de Pesquisas Oncológicas",
+   "uf": "SC",
+   "vagas": "2 vagas até R$ 5.001,11",
+   "cargos": "Enfermeiro I, Técnico de Enfermagem I",
+   "escolaridade": "Técnico / Superior",
+   "inscricoes": "19/11/2026",
+   "fim": "2026-11-19",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/fahece-sc-abre-processos-seletivos-para-enfermagem-no-cepon-de-florianopolis",
+   "desde": "2026-11-18"
+  },
+  {
    "orgao": "Prefeitura de Cerro Negro",
    "uf": "SC",
    "vagas": "20 vagas até R$ 7.474,01",
@@ -865,18 +925,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cerro-negro-sc-abre-processo-seletivo-com-salarios-de-ate-7474",
    "desde": "2026-10-31"
-  },
-  {
-   "orgao": "Prefeitura de Atalanta",
-   "uf": "SC",
-   "vagas": "1 vaga até R$ 9.751,15",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "17/11/2026",
-   "fim": "2026-11-17",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-atalanta-sc-abre-processo-seletivo-com-salarios-de-ate-9751",
-   "desde": "2026-10-29"
   },
   {
    "orgao": "IGESDF - Instituto de Gestão Estratégica de Saúde do Distrito Federal",
@@ -934,7 +982,7 @@
    "escolaridade": "Médio / Técnico / Superior",
    "inscricoes": "04/12/2026",
    "fim": "2026-12-04",
-   "destaque": false,
+   "destaque": true,
    "link": "https://www.pciconcursos.com.br/noticias/ufms-abre-concurso-publico-para-cargos-tecnico-administrativos-em-educacao",
    "desde": "2026-10-31"
   },
@@ -961,6 +1009,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-bandeirantes-mt-abre-selecao-com-salarios-de-ate-4928",
    "desde": "2026-11-12"
+  },
+  {
+   "orgao": "Prefeitura de Tabaporã",
+   "uf": "MT",
+   "vagas": "165 vagas até R$ 9.677,25",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "01/12/2026",
+   "fim": "2026-12-01",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tabapora-mt-abre-selecao-com-salarios-de-ate-9677",
+   "desde": "2026-11-18"
   },
   {
    "orgao": "Prefeitura de Comodoro",
@@ -1033,6 +1093,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pedra-branca-do-amapari-ap-abre-concurso-publico-com-salarios-de-ate-6000",
    "desde": "2026-11-10"
+  },
+  {
+   "orgao": "Prefeitura de Trairão",
+   "uf": "PA",
+   "vagas": "589 vagas até R$ 4.258,76",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "23 a 27/11/2026",
+   "fim": "2026-11-27",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-trairao-pa-abre-tres-processos-seletivos-para-diversas-areas",
+   "desde": "2026-11-18"
   },
   {
    "orgao": "IPAM - Instituto de Previdência e Assistência dos Servidores do Município de Porto Velho",
@@ -1153,6 +1225,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itapororoca-pb-abre-concurso-com-salarios-de-ate-10000",
    "desde": "2026-10-22"
+  },
+  {
+   "orgao": "Prefeitura de Custódia",
+   "uf": "PE",
+   "vagas": "384 vagas até R$ 8.000,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "18/12/2026",
+   "fim": "2026-12-18",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-custodia-pe-abre-concurso-publico-com-diversas-vagas",
+   "desde": "2026-11-18"
   },
   {
    "orgao": "Prefeitura de Moreilândia",
