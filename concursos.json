@@ -1,5 +1,5 @@
 {
- "atualizado": "18/11/2026 08:35",
+ "atualizado": "19/11/2026 08:33",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -193,18 +193,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-cunha-sp-abre-concurso-publico-com-salarios-de-ate-9147",
    "desde": "2026-10-27"
-  },
-  {
-   "orgao": "FAMESP - Fundação para o Desenvolvimento Médico e Hospitalar",
-   "uf": "SP",
-   "vagas": "19 vagas até R$ 4.934,38",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "18/11/2026",
-   "fim": "2026-11-18",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-para-diversas-areas-em-bauru",
-   "desde": "2026-11-06"
   },
   {
    "orgao": "Prefeitura de Italva",
@@ -416,7 +404,7 @@
    "vagas": "1 vaga até R$ 4.204,52",
    "cargos": "Enfermeiro",
    "escolaridade": "Superior",
-   "inscricoes": "19 a 26/11/2026",
+   "inscricoes": "26/11/2026",
    "fim": "2026-11-26",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/fhemig-mg-abre-processo-seletivo-para-enfermeiro-em-belo-horizonte",
@@ -471,30 +459,6 @@
    "desde": "2026-10-22"
   },
   {
-   "orgao": "Prefeitura de Dom Silvério",
-   "uf": "MG",
-   "vagas": "6 vagas até R$ 4.824,42",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "18/11/2026",
-   "fim": "2026-11-18",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-dom-silverio-mg-abre-processo-seletivo-com-salarios-de-ate-4824",
-   "desde": "2026-11-12"
-  },
-  {
-   "orgao": "Prefeitura de Piracema",
-   "uf": "MG",
-   "vagas": "132 vagas até R$ 18.647,01",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "18/11/2026",
-   "fim": "2026-11-18",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-piracema-mg-abre-concurso-e-processo-seletivo-com-diversas-vagas",
-   "desde": "2026-10-22"
-  },
-  {
    "orgao": "Prefeitura de Anchieta",
    "uf": "ES",
    "vagas": "25 vagas até R$ 14.000,00",
@@ -512,11 +476,23 @@
    "vagas": "157 vagas até R$ 4.554,00",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "19/11 a 08/12/2026",
+   "inscricoes": "08/12/2026",
    "fim": "2026-12-08",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-muqui-es-abre-concurso-publico-com-diversas-vagas",
    "desde": "2026-11-14"
+  },
+  {
+   "orgao": "Prefeitura de Palmital",
+   "uf": "PR",
+   "vagas": "126 vagas até R$ 22.836,51",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "25/11 a 27/12/2026",
+   "fim": "2026-12-27",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmital-pr-abre-concurso-publico-com-salarios-de-ate-22836",
+   "desde": "2026-11-19"
   },
   {
    "orgao": "Prefeitura de Itambaracá",
@@ -603,24 +579,12 @@
    "desde": "2026-10-24"
   },
   {
-   "orgao": "Prefeitura de Santo Antônio do Sudoeste",
-   "uf": "PR",
-   "vagas": "21 vagas até R$ 6.206,47",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "18/11/2026",
-   "fim": "2026-11-18",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santo-antonio-do-sudoeste-pr-abre-selecao-com-vagas-imediatas-e-cadastro-de-reserva",
-   "desde": "2026-11-17"
-  },
-  {
    "orgao": "IFFar - Instituto Federal de Educação, Ciência e Tecnologia Farroupilha",
    "uf": "RS",
    "vagas": "30 vagas até R$ 4.976,27",
    "cargos": "Vários Cargos",
    "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "19/11 a 21/12/2026",
+   "inscricoes": "21/12/2026",
    "fim": "2026-12-21",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/iffar-rs-abre-concurso-publico-com-vagas-para-diversas-areas",
@@ -675,6 +639,18 @@
    "desde": "2026-11-10"
   },
   {
+   "orgao": "Prefeitura de Chapada",
+   "uf": "RS",
+   "vagas": "Vagas até R$ 4.863,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "24/11/2026",
+   "fim": "2026-11-24",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-chapada-rs-abre-processo-seletivo-com-salarios-de-ate-4863",
+   "desde": "2026-11-19"
+  },
+  {
    "orgao": "Prefeitura de Ijuí",
    "uf": "RS",
    "vagas": "157 vagas até R$ 21.312,22",
@@ -697,6 +673,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ipe-rs-abre-concurso-publico-com-salarios-de-ate-20745",
    "desde": "2026-10-22"
+  },
+  {
+   "orgao": "Prefeitura de Tijucas",
+   "uf": "SC",
+   "vagas": "97 vagas até R$ 9.941,61",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Superior",
+   "inscricoes": "24/11/2026 a 05/01/2027",
+   "fim": "2027-01-05",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
+   "desde": "2026-11-19"
   },
   {
    "orgao": "Prefeitura do Município de Curitibanos",
@@ -819,6 +807,18 @@
    "desde": "2026-10-31"
   },
   {
+   "orgao": "Prefeitura de Coronel Freitas e Câmara de Coronel Freitas",
+   "uf": "SC",
+   "vagas": "10 vagas até R$ 22.662,75",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "27/11/2026",
+   "fim": "2026-11-27",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-coronel-freitas-sc-anunciam-processo-seletivo-para-diversos-cargos",
+   "desde": "2026-11-19"
+  },
+  {
    "orgao": "SES - Secretaria de Estado da Saúde de Santa Catarina",
    "uf": "SC",
    "vagas": "12 vagas até R$ 10.581,16",
@@ -927,18 +927,6 @@
    "desde": "2026-10-31"
   },
   {
-   "orgao": "IGESDF - Instituto de Gestão Estratégica de Saúde do Distrito Federal",
-   "uf": "DF",
-   "vagas": "Vagas até R$ 13.359,56",
-   "cargos": "Enfermeiro, Médico",
-   "escolaridade": "Superior",
-   "inscricoes": "18/11/2026",
-   "fim": "2026-11-18",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/igesdf-df-abre-selecoes-para-enfermeiro-e-medico-otorrinolaringologista",
-   "desde": "2026-11-11"
-  },
-  {
    "orgao": "Prefeitura de São Francisco de Goiás",
    "uf": "GO",
    "vagas": "86 vagas até R$ 10.500,00",
@@ -1025,7 +1013,7 @@
   {
    "orgao": "Prefeitura de Comodoro",
    "uf": "MT",
-   "vagas": "39 vagas até R$ 7.929,74",
+   "vagas": "31 vagas até R$ 7.929,74",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
    "inscricoes": "01/12/2026",
