@@ -1,5 +1,5 @@
 {
- "atualizado": "24/11/2026 10:37",
+ "atualizado": "25/11/2026 05:26",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -85,6 +85,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tapirai-sp-abre-concurso-publico-com-salarios-de-ate-7991",
    "desde": "2026-11-12"
+  },
+  {
+   "orgao": "Prefeitura de Tarabai",
+   "uf": "SP",
+   "vagas": "Vagas até R$ 3.096,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Superior",
+   "inscricoes": "13/12/2026",
+   "fim": "2026-12-13",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tarabai-sp-abre-processo-seletivo-para-formacao-de-cadastro-reserva-em-diversas-areas",
+   "desde": "2026-11-25"
   },
   {
    "orgao": "Irmandade da Santa Casa de Misericórdia e Maternidade de Dracena",
@@ -387,6 +399,18 @@
    "desde": "2026-11-06"
   },
   {
+   "orgao": "Fhemig - Fundação Hospitalar do Estado de Minas Gerais",
+   "uf": "MG",
+   "vagas": "14 vagas até R$ 7.040,85",
+   "cargos": "Enfermeiro, Médico",
+   "escolaridade": "Superior",
+   "inscricoes": "26/11 a 02/12/2026",
+   "fim": "2026-12-02",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/fhemig-mg-abre-processos-seletivos-para-14-vagas-e-cadastro-reserva-em-belo-horizonte",
+   "desde": "2026-11-25"
+  },
+  {
    "orgao": "SEMSA - Secretaria Municipal de Saúde de Nova Lima",
    "uf": "MG",
    "vagas": "24 vagas até R$ 8.106,76",
@@ -476,7 +500,7 @@
    "vagas": "126 vagas até R$ 22.836,51",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "25/11 a 27/12/2026",
+   "inscricoes": "27/12/2026",
    "fim": "2026-12-27",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-palmital-pr-abre-concurso-publico-com-salarios-de-ate-22836",
@@ -488,7 +512,7 @@
    "vagas": "6 vagas até R$ 6.800,00",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Superior",
-   "inscricoes": "25/11 a 04/12/2026",
+   "inscricoes": "04/12/2026",
    "fim": "2026-12-04",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itambaraca-pr-abre-selecao-com-salarios-de-ate-6800",
@@ -601,30 +625,6 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-piratini-rs-abre-concurso-publico-com-salarios-de-ate-7462",
    "desde": "2026-11-10"
-  },
-  {
-   "orgao": "Prefeitura de Chapada",
-   "uf": "RS",
-   "vagas": "Vagas até R$ 4.863,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Médio / Técnico / Superior",
-   "inscricoes": "24/11/2026",
-   "fim": "2026-11-24",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-chapada-rs-abre-processo-seletivo-com-salarios-de-ate-4863",
-   "desde": "2026-11-19"
-  },
-  {
-   "orgao": "Prefeitura de Ijuí",
-   "uf": "RS",
-   "vagas": "157 vagas até R$ 21.312,22",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "Prorrogado até 24/11/2026",
-   "fim": "2026-11-24",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-ijui-rs-retifica-edital-de-concurso-publico",
-   "desde": "2026-11-17"
   },
   {
    "orgao": "Prefeitura de Tijucas",
@@ -851,8 +851,8 @@
    "inscricoes": "28/11/2026",
    "fim": "2026-11-28",
    "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/municipio-de-nova-trento-sc-abre-tres-novos-processos-seletivos-com-salarios-de-ate-14189",
-   "desde": "2026-10-31"
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-trento-sc-abre-tres-processos-seletivos-para-diversas-areas",
+   "desde": "2026-11-25"
   },
   {
    "orgao": "Prefeitura de Coronel Freitas e Câmara de Coronel Freitas",
@@ -915,16 +915,16 @@
    "desde": "2026-10-24"
   },
   {
-   "orgao": "Prefeitura de Santa Terezinha do Progresso",
-   "uf": "SC",
-   "vagas": "8 vagas até R$ 10.000,00",
+   "orgao": "Prefeitura de Corumbaíba",
+   "uf": "GO",
+   "vagas": "209 vagas até R$ 11.912,14",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "24/11/2026",
-   "fim": "2026-11-24",
+   "inscricoes": "04 a 26/01/2027",
+   "fim": "2027-01-26",
    "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santa-terezinha-do-progresso-sc-abre-concurso-publico-com-salarios-de-ate-10000",
-   "desde": "2026-11-23"
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbaiba-go-abre-concurso-publico-com-838-vagas-no-total",
+   "desde": "2026-11-25"
   },
   {
    "orgao": "Prefeitura de São Francisco de Goiás",
@@ -1004,7 +1004,7 @@
    "vagas": "189 vagas até R$ 4.928,75",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "25/11 a 03/12/2026",
+   "inscricoes": "03/12/2026",
    "fim": "2026-12-03",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-bandeirantes-mt-abre-selecao-com-salarios-de-ate-4928",
@@ -1259,8 +1259,8 @@
    "inscricoes": "25/11/2026",
    "fim": "2026-11-25",
    "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-belem-do-piaui-pi-abre-concurso-com-remuneracoes-de-ate-12000",
-   "desde": "2026-10-29"
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-belem-do-piaui-pi-abre-concurso-publico-para-cargos-de-todos-os-niveis",
+   "desde": "2026-11-25"
   },
   {
    "orgao": "Prefeitura de Campo Grande do Piauí",
