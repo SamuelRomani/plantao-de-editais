@@ -1,7 +1,19 @@
 {
- "atualizado": "26/11/2026 00:32",
+ "atualizado": "26/11/2026 13:49",
  "inicio": "2026-10-22",
  "concursos": [
+  {
+   "orgao": "Coren - Conselho Regional de Enfermagem de São Paulo",
+   "uf": "SP",
+   "vagas": "76 vagas até R$ 10.692,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Superior",
+   "inscricoes": "11/01/2027",
+   "fim": "2027-01-11",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/coren-sp-abre-concurso-com-76-vagas-e-salarios-de-ate-10692",
+   "desde": "2026-11-26"
+  },
   {
    "orgao": "HFASP - Hospital de Força Aérea de São Paulo",
    "uf": "SP",
@@ -557,14 +569,14 @@
   {
    "orgao": "IFFar - Instituto Federal de Educação, Ciência e Tecnologia Farroupilha",
    "uf": "RS",
-   "vagas": "30 vagas até R$ 4.976,27",
+   "vagas": "30 vagas até R$ 5.215,39",
    "cargos": "Vários Cargos",
    "escolaridade": "Médio / Técnico / Superior",
    "inscricoes": "21/12/2026",
    "fim": "2026-12-21",
    "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/iffar-rs-abre-concurso-publico-com-vagas-para-diversas-areas",
-   "desde": "2026-11-13"
+   "link": "https://www.pciconcursos.com.br/noticias/iffar-rs-abre-concurso-publico-para-cargos-de-niveis-medio-e-superior",
+   "desde": "2026-11-26"
   },
   {
    "orgao": "Prefeitura de Antônio Prado",
@@ -603,6 +615,18 @@
    "desde": "2026-11-18"
   },
   {
+   "orgao": "Prefeitura de Chapecó",
+   "uf": "SC",
+   "vagas": "91 vagas até R$ 25.599,11",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "07/12/2026 a 07/01/2027",
+   "fim": "2027-01-07",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/municipio-de-chapeco-sc-abre-concurso-com-91-vagas-e-salarios-de-ate-25599",
+   "desde": "2026-11-26"
+  },
+  {
    "orgao": "Prefeitura de Tijucas",
    "uf": "SC",
    "vagas": "97 vagas até R$ 9.941,61",
@@ -613,6 +637,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
    "desde": "2026-11-19"
+  },
+  {
+   "orgao": "Prefeitura de Matos Costa",
+   "uf": "SC",
+   "vagas": "44 vagas até R$ 5.529,01",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "23/12/2026",
+   "fim": "2026-12-23",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-matos-costa-sc-abre-selecao-com-salarios-de-ate-5529",
+   "desde": "2026-11-26"
   },
   {
    "orgao": "Prefeitura de Chapadão do Lageado",
@@ -661,6 +697,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itaiopolis-sc-abre-processo-seletivo-para-cadastro-reserva-em-diversas-areas",
    "desde": "2026-11-21"
+  },
+  {
+   "orgao": "Prefeitura de Nova Itaberaba",
+   "uf": "SC",
+   "vagas": "4 vagas até R$ 25.482,65",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "07/12/2026",
+   "fim": "2026-12-07",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-nova-itaberaba-sc-abre-processo-seletivo-com-4-vagas-e-cadastro-de-reserva",
+   "desde": "2026-11-26"
   },
   {
    "orgao": "Prefeitura de Arroio Trinta",
@@ -867,6 +915,18 @@
    "desde": "2026-11-13"
   },
   {
+   "orgao": "Cofen - Conselho Federal de Enfermagem",
+   "uf": "DF",
+   "vagas": "6 vagas até R$ 18.950,52",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Superior",
+   "inscricoes": "11/01/2027",
+   "fim": "2027-01-11",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/cofen-df-abre-concurso-publico-com-salarios-de-18950-para-diversos-cargos-de-nivel-superior",
+   "desde": "2026-11-26"
+  },
+  {
    "orgao": "Prefeitura de Corumbaíba",
    "uf": "GO",
    "vagas": "209 vagas até R$ 11.912,14",
@@ -949,6 +1009,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-novo-sao-joaquim-mt-abre-concurso-com-salarios-de-ate-11979",
    "desde": "2026-10-24"
+  },
+  {
+   "orgao": "Prefeitura de Itaúba",
+   "uf": "MT",
+   "vagas": "51 vagas até R$ 5.798,38",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "10/12/2026",
+   "fim": "2026-12-10",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itauba-mt-abre-processo-seletivo-com-51-vagas-e-iniciais-de-ate-5798",
+   "desde": "2026-11-26"
   },
   {
    "orgao": "Prefeitura de Nova Bandeirantes",
