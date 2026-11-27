@@ -1,5 +1,5 @@
 {
- "atualizado": "26/11/2026 13:49",
+ "atualizado": "26/11/2026 22:41",
  "inicio": "2026-10-22",
  "concursos": [
   {
@@ -135,6 +135,18 @@
    "desde": "2026-10-22"
   },
   {
+   "orgao": "FAMESP - Fundação para o Desenvolvimento Médico e Hospitalar",
+   "uf": "SP",
+   "vagas": "5 vagas até R$ 12.154,19",
+   "cargos": "Enfermeiro, Analista de Sistemas Júnior, Médico",
+   "escolaridade": "Superior",
+   "inscricoes": "29/11 a 08/12/2026",
+   "fim": "2026-12-08",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/famesp-sp-abre-processos-seletivos-para-cargos-de-nivel-superior-com-ganhos-de-12-1-mil",
+   "desde": "2026-11-26"
+  },
+  {
    "orgao": "Prefeitura de Altair",
    "uf": "SP",
    "vagas": "41 vagas até R$ 11.000,00",
@@ -239,8 +251,8 @@
    "inscricoes": "26/11/2026",
    "fim": "2026-11-26",
    "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbatai-sp-abre-concurso-publico-com-vagas-imediatas-e-cadastro-de-reserva",
-   "desde": "2026-11-13"
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-corumbatai-sp-abre-concurso-publico-com-salarios-de-ate-14955",
+   "desde": "2026-11-26"
   },
   {
    "orgao": "Prefeitura de Italva",
@@ -519,6 +531,30 @@
    "desde": "2026-11-19"
   },
   {
+   "orgao": "Prefeitura de Mandaguari",
+   "uf": "PR",
+   "vagas": "1 vaga até R$ 4.919,11",
+   "cargos": "Enfermeiro",
+   "escolaridade": "Superior",
+   "inscricoes": "30/11 a 09/12/2026",
+   "fim": "2026-12-09",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-mandaguari-pr-abre-selecao-para-enfermeiro-com-salario-de-4919",
+   "desde": "2026-11-26"
+  },
+  {
+   "orgao": "FASMO - Fundação de Atenção à Saúde de Morretes",
+   "uf": "PR",
+   "vagas": "Vagas até R$ 4.750,00",
+   "cargos": "Enfermeiro, Técnico de Enfermagem, Médico",
+   "escolaridade": "Médio / Superior",
+   "inscricoes": "07/12/2026",
+   "fim": "2026-12-07",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/fasmo-de-morretes-pr-abre-processo-seletivo-para-cadastro-reserva-em-cargos-de-saude",
+   "desde": "2026-11-26"
+  },
+  {
    "orgao": "Prefeitura de Itambaracá",
    "uf": "PR",
    "vagas": "6 vagas até R$ 6.800,00",
@@ -565,6 +601,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-alto-piquiri-pr-abre-processo-seletivo-para-cadastro-de-reserva-em-diversas-areas",
    "desde": "2026-11-17"
+  },
+  {
+   "orgao": "Prefeitura de Pareci Novo",
+   "uf": "RS",
+   "vagas": "45 vagas até R$ 12.066,62",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Superior",
+   "inscricoes": "02 a 22/12/2026",
+   "fim": "2026-12-22",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-pareci-novo-rs-abre-concurso-com-45-vagas-e-salarios-de-ate-12066",
+   "desde": "2026-11-26"
   },
   {
    "orgao": "IFFar - Instituto Federal de Educação, Ciência e Tecnologia Farroupilha",
@@ -639,6 +687,18 @@
    "desde": "2026-11-19"
   },
   {
+   "orgao": "Prefeitura de Santo Amaro da Imperatriz",
+   "uf": "SC",
+   "vagas": "Vagas até R$ 10.885,60",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "23/12/2026",
+   "fim": "2026-12-23",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-santo-amaro-da-imperatriz-sc-abre-processos-seletivos-com-salarios-de-ate-10800",
+   "desde": "2026-11-26"
+  },
+  {
    "orgao": "Prefeitura de Matos Costa",
    "uf": "SC",
    "vagas": "44 vagas até R$ 5.529,01",
@@ -697,6 +757,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itaiopolis-sc-abre-processo-seletivo-para-cadastro-reserva-em-diversas-areas",
    "desde": "2026-11-21"
+  },
+  {
+   "orgao": "Prefeitura de Macieira",
+   "uf": "SC",
+   "vagas": "15 vagas até R$ 24.960,42",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Superior",
+   "inscricoes": "07/12/2026",
+   "fim": "2026-12-07",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-macieira-sc-abre-processo-seletivo-com-salarios-de-ate-24960",
+   "desde": "2026-11-26"
   },
   {
    "orgao": "Prefeitura de Nova Itaberaba",
@@ -999,6 +1071,18 @@
    "desde": "2026-11-20"
   },
   {
+   "orgao": "Prefeitura de Rio Branco e Câmara de Rio Branco",
+   "uf": "MT",
+   "vagas": "58 vagas até R$ 6.206,13",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "04/12/2026 a 07/01/2027",
+   "fim": "2027-01-07",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-e-camara-de-rio-branco-mt-abrem-concurso-com-58-vagas-e-cadastro-reserva",
+   "desde": "2026-11-26"
+  },
+  {
    "orgao": "Prefeitura de Novo São Joaquim",
    "uf": "MT",
    "vagas": "266 vagas até R$ 11.979,03",
@@ -1273,6 +1357,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-moreilandia-pe-retifica-dois-concursos-publicos",
    "desde": "2026-11-05"
+  },
+  {
+   "orgao": "Prefeitura de Monsenhor Gil",
+   "uf": "PI",
+   "vagas": "101 vagas até R$ 8.000,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "Prorrogado até 07/12/2026",
+   "fim": "2026-12-07",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-monsenhor-gil-pi-abre-concurso-com-vagas-para-todos-os-niveis-de-escolaridade",
+   "desde": "2026-11-26"
   }
  ]
 }
