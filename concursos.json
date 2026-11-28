@@ -1,7 +1,19 @@
 {
- "atualizado": "28/11/2026 00:17",
+ "atualizado": "28/11/2026 12:27",
  "inicio": "2026-10-22",
  "concursos": [
+  {
+   "orgao": "Prefeitura da Estância Turística de Itu",
+   "uf": "SP",
+   "vagas": "94 vagas até R$ 18.847,36",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "15/02/2027",
+   "fim": "2027-02-15",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-itu-sp-abre-concurso-com-94-vagas-e-salarios-de-ate-18847",
+   "desde": "2026-11-28"
+  },
   {
    "orgao": "Coren - Conselho Regional de Enfermagem de São Paulo",
    "uf": "SP",
@@ -29,14 +41,14 @@
   {
    "orgao": "Prefeitura de Jandira",
    "uf": "SP",
-   "vagas": "1072 vagas até R$ 12.213,03",
+   "vagas": "1.380 vagas até R$ 12.213,03",
    "cargos": "Vários Cargos",
    "escolaridade": "Fundamental / Médio / Técnico / Superior",
    "inscricoes": "04/01/2027",
    "fim": "2027-01-04",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-tres-concursos-publicos-para-diversos-cargos",
-   "desde": "2026-11-07"
+   "destaque": true,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-jandira-sp-abre-quatro-concursos-com-1380-vagas-e-salarios-de-ate-12-mil",
+   "desde": "2026-11-28"
   },
   {
    "orgao": "Prefeitura de Pilar do Sul",
@@ -315,6 +327,30 @@
    "desde": "2026-10-22"
   },
   {
+   "orgao": "Prefeitura de Patis",
+   "uf": "MG",
+   "vagas": "155 vagas até R$ 13.500,00",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "Prorrogado de 18/12/2026 a 15/01/2027",
+   "fim": "2027-01-15",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patis-mg-abre-concurso-com-salarios-de-ate-13500",
+   "desde": "2026-11-28"
+  },
+  {
+   "orgao": "Prefeitura de São José do Divino",
+   "uf": "MG",
+   "vagas": "18 vagas até R$ 2.990,99",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "21/12/2026 a 14/01/2027",
+   "fim": "2027-01-14",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-jose-do-divino-mg-abre-processo-seletivo-com-18-vagas-imediatas",
+   "desde": "2026-11-28"
+  },
+  {
    "orgao": "Prefeitura de Luislândia",
    "uf": "MG",
    "vagas": "88 vagas até R$ 10.000,00",
@@ -324,18 +360,6 @@
    "fim": "2027-01-06",
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luislandia-mg-abre-concurso-publico-com-vagas-em-diversas-areas",
-   "desde": "2026-10-22"
-  },
-  {
-   "orgao": "Prefeitura de Patis",
-   "uf": "MG",
-   "vagas": "154 vagas até R$ 13.500,00",
-   "cargos": "Vários Cargos",
-   "escolaridade": "Fundamental / Médio / Técnico / Superior",
-   "inscricoes": "03 a 30/12/2026",
-   "fim": "2026-12-30",
-   "destaque": false,
-   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-patis-mg-abre-concurso-publico-com-salarios-de-ate-13500",
    "desde": "2026-10-22"
   },
   {
@@ -447,6 +471,18 @@
    "desde": "2026-11-10"
   },
   {
+   "orgao": "FAEPU - Fundação de Assistência, Estudo e Pesquisa de Uberlândia",
+   "uf": "MG",
+   "vagas": "Vagas até R$ 6.062,29",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "Reaberto até 29/11/2026",
+   "fim": "2026-11-29",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/faepu-mg-abre-processo-seletivo-em-araguari-para-diversos-niveis-de-escolaridade",
+   "desde": "2026-11-28"
+  },
+  {
    "orgao": "Prefeitura de Anchieta",
    "uf": "ES",
    "vagas": "25 vagas até R$ 14.000,00",
@@ -543,6 +579,18 @@
    "desde": "2026-10-22"
   },
   {
+   "orgao": "FMS-SL - Fundação Municipal de Saúde de São Leopoldo",
+   "uf": "RS",
+   "vagas": "23 vagas até R$ 19.574,72",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Médio / Técnico / Superior",
+   "inscricoes": "29/12/2026",
+   "fim": "2026-12-29",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/fms-de-sao-leopoldo-rs-abre-selecao-com-23-vagas-e-salarios-de-ate-19574",
+   "desde": "2026-11-28"
+  },
+  {
    "orgao": "Prefeitura de Pareci Novo",
    "uf": "RS",
    "vagas": "45 vagas até R$ 12.066,62",
@@ -613,6 +661,30 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-tijucas-sc-abre-concursos-publicos-com-salarios-de-ate-9941",
    "desde": "2026-11-19"
+  },
+  {
+   "orgao": "Prefeitura de Vargem",
+   "uf": "SC",
+   "vagas": "70 vagas até R$ 24.027,75",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "28/12/2026",
+   "fim": "2026-12-28",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-vargem-sc-abre-concurso-com-70-vagas-e-salarios-de-ate-24-mil",
+   "desde": "2026-11-28"
+  },
+  {
+   "orgao": "Pedras Grandes (FUMPEG e SAMAE)",
+   "uf": "SC",
+   "vagas": "11 vagas até R$ 15.741,82",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "26/12/2026",
+   "fim": "2026-12-26",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/municipio-de-pedras-grandes-sc-abre-processos-seletivos-com-11-vagas-e-cadastro-reserva",
+   "desde": "2026-11-28"
   },
   {
    "orgao": "Prefeitura de Santo Amaro da Imperatriz",
@@ -841,6 +913,18 @@
    "destaque": false,
    "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-sao-carlos-sc-abre-processos-seletivos-para-cadastro-de-reserva",
    "desde": "2026-11-17"
+  },
+  {
+   "orgao": "Prefeitura de Luiz Alves",
+   "uf": "SC",
+   "vagas": "63 vagas até R$ 8.889,30",
+   "cargos": "Vários Cargos",
+   "escolaridade": "Fundamental / Médio / Técnico / Superior",
+   "inscricoes": "Reaberto até 30/11/2026",
+   "fim": "2026-11-30",
+   "destaque": false,
+   "link": "https://www.pciconcursos.com.br/noticias/prefeitura-de-luiz-alves-sc-abre-concurso-com-salarios-de-ate-8889",
+   "desde": "2026-11-28"
   },
   {
    "orgao": "Prefeitura de Mirim Doce",
